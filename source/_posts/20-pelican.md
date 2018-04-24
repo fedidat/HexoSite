@@ -104,7 +104,7 @@ Setting up a Pelican theme is simple: download it from Github, put it in a
 within `pelicanconf.py` using in this example:
 
 ```python
-THEME = "pelican-themes/pelican-bootstrap3"
+THEME = "images/pelican-themes/pelican-bootstrap3"
 ```
 
 Furthermore, because this theme supports internationalization (i18n), you have
@@ -177,7 +177,7 @@ Since you probably intend to use Github user pages, you have to create your
 user repo with the repo name "[Github user].github.io". 
 Then you have to configure it under your repo's settings to use:
 
-![configuring gh pages](images/pelican-experience/configure-ghpages.png)
+![configuring gh pages](/images/pelican-experience/configure-ghpages.png)
 
 After that, anytime you want to deploy the output folder to your site, you
 may run these commands from the site root:
@@ -194,7 +194,7 @@ master branch of your user pages repo.
 
 If you intend to use a custom domain, you must first direct it to your Github Pages:
 
-![ghpages custom domain](images/pelican-experience/ghpages-custom-domain.png)
+![ghpages custom domain](/images/pelican-experience/ghpages-custom-domain.png)
 
 Then you should enter your custom domain in your repo's settings,
 as shown [above](#deploying-to-github-pages). Finally, you will

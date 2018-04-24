@@ -7,15 +7,14 @@ date: 2018-04-24 11:54:04
 
 My name is Ben Fedidat.
 
-I am a software engineer from Jerusalem, Israel.
-I have experience in Java development but I'm trying to
-learn as much as I can about web-oriented development, both
-frontend with angular<span>.io, and backend with Spring.
+I am a software engineer from Paris living in Israel.
+I have 4 years of experience in backend Java development
+and I am also very interested in web programming, Linux, DevOps.
 
 ## CV
 
 | Language  | DOC                                                      | PDF                                                      |
-| --------- |:--------------------------------------------------------:| --------------------------------------------------------:|
-| English   | [DOC_EN](/extra/docs/CV_Benjamin_FEDIDAT_EN_02_2018.doc) | [PDF_EN](/extra/docs/CV_Benjamin_FEDIDAT_EN_02_2018.pdf) |
-| עברית      | [DOC_HE](/extra/docs/CV_Benjamin_FEDIDAT_HE_02_2018.doc) | [PDF_HE](/extra/docs/CV_Benjamin_FEDIDAT_HE_02_2018.pdf) |
-| Français  | [DOC_FR](/extra/docs/CV_Benjamin_FEDIDAT_FR_02_2018.doc) | [PDF_FR](/extra/docs/CV_Benjamin_FEDIDAT_FR_02_2018.pdf) |
+| --------- | -------------------------------------------------------- | -------------------------------------------------------- |
+| English   | [DOC_EN](/docs/CV_Benjamin_FEDIDAT_EN_02_2018.doc) | [PDF_EN](/docs/CV_Benjamin_FEDIDAT_EN_02_2018.pdf) |
+| עברית      | [DOC_HE](/extra/docs/CV_Benjamin_FEDIDAT_HE_02_2018.doc) | [PDF_HE](/docs/CV_Benjamin_FEDIDAT_HE_02_2018.pdf) |
+| Français  | [DOC_FR](/docs/CV_Benjamin_FEDIDAT_FR_02_2018.doc) | [PDF_FR](/docs/CV_Benjamin_FEDIDAT_FR_02_2018.pdf) |

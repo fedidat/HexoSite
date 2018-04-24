@@ -34,7 +34,7 @@ ZonedDateTime t = timestamp.toInstant().atZone(ZonedId.systemDefault());
 System.out.println(t.toString);
 ```
 
->2018-04-16T08:12:59.626+03:00[Asia/Jerusalem]
+`2018-04-16T08:12:59.626+03:00[Asia/Jerusalem]`
 
 While this may be compliant with ISO8601, the presence of the
 timezone name (`ZoneId`) may be redundant, even though the 

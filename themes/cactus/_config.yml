@@ -17,7 +17,8 @@ nav:
   home: /
   about: /about/
   articles: /archives/
-  projects: projects_url
+#  projects: projects_url
+  search: /Search/
 
 
 # Links to your social media accounts.
@@ -29,7 +30,7 @@ social_links:
 #  twitter: /
 #  facebook: /
   linkedin: https://www.linkedin.com/in/fedidat
-  mail: mailto:fedidat@gmail.com
+  mail: mailto:ben@fedidat.com
 
 
 # Customize the overview with the most recent blog posts on the index page.
@@ -97,7 +98,7 @@ page_width: 48
 ##############################################################################
 
 # Enable or disable the RSS feed.
-rss: false
+rss: atom.xml
 
 # Turn your web pages into graph objects (see http://ogp.me).
 open_graph: 
