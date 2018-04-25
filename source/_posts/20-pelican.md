@@ -4,7 +4,8 @@ date: 2017-10-24 16:30
 updated: 2017-10-24 16:30
 comments: true
 tags:
-- metablog
+- blog
+- meta
 categories:
 - web
 permalink: experience-pelican

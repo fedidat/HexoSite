@@ -4,7 +4,8 @@ date: 2017-10-23 16:21
 updated: 2017-10-23 16:21
 comments: true
 tags:
-- metablog
+- blog
+- meta
 - first
 categories:
 - metablog
