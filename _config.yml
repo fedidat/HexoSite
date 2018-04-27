@@ -8,12 +8,12 @@ subtitle:
 description:
 keywords:
 author: Ben Fedidat
-language:
-timezone:
+language: en
+timezone: Asia/Jerusalem
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://fedidat.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -37,12 +37,12 @@ filename_case: 0
 render_drafts: false
 post_asset_folder: false
 relative_link: false
-future: true
+future: false
 highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace:
+  tab_replace: true
   
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -79,8 +79,32 @@ theme: cactus
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: rsync
+  host: 
+  user: root
+  root: /var/www/html
+  port: 22
+  delete: true
+  verbose: true
+  ignore_errors: false
 
 marked:
   gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
   breaks: false
+  smartLists: true
+  smartypants: true
+  modifyAnchors: ''
+  autolink: true
+
+# Hexo Beautify 
+beautify:
+  types:
+    - html
+    - css
+    - js
+  exclude:
+    - "*.min.css"
+    - "*.min.js"

@@ -46,7 +46,7 @@ for(Iterator<Integer> numIt = numbers.iterator(); numIt.hasNext();) {
     if(n == 2)
         numIt.remove();
 }
-``` 
+```
 
 **Note: using remove repeatedly on array types is a bad idea because it [shifts all following elements](https://stackoverflow.com/questions/33182102/difference-in-lambda-performances) for every call.**
 
