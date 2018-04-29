@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "fontawesome5-webfont": "^5.0.4",
+    "game-2048": "0.0.7",
     "jquery": "^3.3.1",
     "justifiedGallery": "^3.6.5"
   }
