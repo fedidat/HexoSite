@@ -80,7 +80,7 @@ theme: cactus
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: rsync
-  host: 
+  host: 23.94.165.46
   user: root
   root: /var/www/html
   port: 22

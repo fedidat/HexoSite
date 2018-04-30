@@ -9,15 +9,23 @@
       <% var i = 0 %>
       <% for(var link in theme.social_links) { %>
         <% if (link == 'mail') { %>
-          <a class="icon" target="_blank" href="<%- url_for(theme.social_links[link]) %>">
+          <a class="icon" target="_blank" href="<%- url_for(theme.social_links[link]) %>" id="address-div">
             <i class="fas fa-envelope"></i><!--
-      ---></a><!--
-      ---><% } else { %>
+       --></a><!--
+       --><script>
+           var user = 'ben',
+           word = "mail" + "to:",
+           domain = 'fedidat' + '.' + 'com',
+           element = document.getElementById('address-div');
+           element.setAttribute("href", word + user + '@' + domain);
+         </script>
+        <!--
+      --><% } else { %>
           <a class="icon" target="_blank" href="<%- url_for(theme.social_links[link]) %>">
             <i class="fab fa-<%= link %>"></i><!--
-      ---></a><!--
-    ---><% } %><!--
-    ---><%= ( nb_links > 0 && i < nb_links-1 ? 
+      --></a><!--
+    --><% } %><!--
+    --><%= ( nb_links > 0 && i < nb_links-1 ? 
             ( i == nb_links-2 ? ' '+__('index.enum_and')+' ' 
             : __('index.enum_comma')+' ' ) 
             : '.' ) %>

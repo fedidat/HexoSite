@@ -39,13 +39,6 @@ gulp.task('lib:justifiedGallery',function(){
     .pipe(gulp.dest('./source/lib/justified-gallery'))
 })
 
-gulp.task('lib:2048',function(){
-  return gulp.src([
-    'node_modules/game-2048/**'
-  ], {base: 'node_modules/game-2048'})
-    .pipe(gulp.dest('./source/lib/game-2048'))
-})
-
 gulp.task('lib:jQuery',function(){
   return gulp.src(['node_modules/jquery/dist/jquery.min.js'])
     .pipe(gulp.dest('./source/lib/jquery'))
@@ -107,7 +100,7 @@ gulp.task('validate:languages', function(cb) {
   }
 });
 
-gulp.task('lib', ['lib:clean', 'lib:jQuery', 'lib:fontAwesome', 'lib:mesloFont', 'lib:justifiedGallery', 'lib:2048']);
+gulp.task('lib', ['lib:clean', 'lib:jQuery', 'lib:fontAwesome', 'lib:mesloFont', 'lib:justifiedGallery']);
 gulp.task('lint', ['lint:js', 'lint:stylus']);
 gulp.task('validate', ['validate:config', 'validate:languages']);
 gulp.task('default', [ 'lint', 'validate' ]);

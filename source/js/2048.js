@@ -260,7 +260,7 @@ KeyboardInputManager.prototype.listen = function () {
 
   // Respond to swipe events
   var touchStartClientX, touchStartClientY;
-  var gameContainer = this.config.gameContainer;
+  var gameContainer = document.getElementById('game-grid');
 
   gameContainer.addEventListener(this.eventTouchstart, function (event) {
     if (!window.navigator.msPointerEnabled && event.touches.length > 1 || event.targetTouches.length > 1 || self.targetIsInput(event)) {
@@ -964,7 +964,7 @@ var Game = function () {
       config.keepPlayingButton.style.display = config.keepPlaying ? null : 'none';
       config.gameMessageContainer = config.gameMessageContainer || createElement('div', { className: 'game-message' }, [createElement('p'), createElement('div', { className: 'lower' }, [config.keepPlayingButton, config.retryButton])]);
       config.tileContainer = config.tileContainer || createElement('div', { className: 'tile-container' });
-      config.gridContainer = createElement('div', { className: 'grid-container' }, Array.apply(null, Array(config.size)).map(function () {
+      config.gridContainer = createElement('div', { className: 'grid-container', id: 'game-grid' }, Array.apply(null, Array(config.size)).map(function () {
         return createElement('div', { className: 'grid-row' }, Array.apply(null, Array(config.size)).map(function () {
           return createElement('div', { className: 'grid-cell' });
         }));

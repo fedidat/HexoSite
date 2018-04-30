@@ -9,7 +9,7 @@ My name is Ben Fedidat.
 
 I am a software engineer from Paris living in Israel.
 I have 4 years of experience in backend Java development
-and I am also very interested in web programming, Linux, DevOps.
+and I am also very interested in web programming, Linux and DevOps.
 
 ## CV
 

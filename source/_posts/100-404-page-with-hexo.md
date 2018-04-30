@@ -9,7 +9,7 @@ I also made it a little more interesting with a game on it.
 
 ## Defining a 404 page
 
-Netlify's server is pretty simple: it just goes to the 404.html on your root folder.
+The handling of 404 by Netlify's server is pretty simple: it just goes to the 404.html on your root folder.
 
 On Hexo, you can accomplish that in two ways: 
 
@@ -26,11 +26,11 @@ Create a 404.md in your `source` folder with some minimal scaffold (just the tit
 If we're already on the subject, I'll tell you how I used hexo's cactus
 theme to embed 2048 into the page.
 
-Disclaimer: I got the great idea from System76. By the way, you can use the it-just-works iframe approach like [they](https://system76.com/404) do. Here's how I did it:
+Disclaimer: I got this great idea from System76's 404 page. By the way, you can use the it-just-works iframe approach like [they](https://system76.com/404) did. Here's how I did it:
 
 - First, we have to bring 2048, we can use [this package](https://www.npmjs.com/package/game-2048). So `npm i game-2048`.
 
-- Now to bring the package to cactus: `sudo npm i -g gulp` if that isn't already the case. Then in `gulpfile.js` add a task to bring 2048 into the libs and add it to `lib` task's dependencies.
+- Now to bring the package to cactus: `sudo npm i -g gulp` if that isn't already the case. Then in `gulpfile.js` add a task to bring 2048 into the libs and add it to the `lib` task's dependencies:
 
 ```js
 gulp.task('lib:2048',function(){
@@ -59,3 +59,8 @@ window.game = new Game({
 });
 </script>
 ```
+
+- One last `hexo generate` to bring it all together and that's it.
+
+**Update**: In the end I scrapped most of this and kept just the JS and CSS files directly in my source.
+It's not like 2048 will be updated anytime soon anyway. Simplicity > all.
