@@ -14,22 +14,13 @@ gulp.task('lib:clean',function(){
   return del.sync([ './source/lib/*' ]);
 })
 
-gulp.task('lib:fontAwesome',function(){
+gulp.task('lib:fork-awesome',function(){
   return gulp.src([
-    'node_modules/fontawesome5-webfont/webfonts/*',
-    'node_modules/fontawesome5-webfont/css/fontawesome-all.min.css'
-  ], {base: 'node_modules/fontawesome5-webfont'})
-    .pipe(gulp.dest('./source/lib/font-awesome'))
+    'node_modules/fork-awesome/fonts/*',
+    'node_modules/fork-awesome/css/fork-awesome.min.css'
+  ], {base: 'node_modules/fork-awesome'})
+    .pipe(gulp.dest('./source/lib/fork-awesome'))
 })
-
-gulp.task('lib:mesloFont', function () {
-  return download('https://github.com/andreberg/Meslo-Font/blob/master/dist/v1.2/Meslo%20LG%20v1.2.zip?raw=true')
-    .pipe(decompress({
-      filter: file => path.extname(file.path) == '.ttf',
-      strip: 1
-    }))
-    .pipe(gulp.dest('./source/lib/meslo-LG'));
-});
 
 gulp.task('lib:justifiedGallery',function(){
   return gulp.src([
@@ -100,7 +91,7 @@ gulp.task('validate:languages', function(cb) {
   }
 });
 
-gulp.task('lib', ['lib:clean', 'lib:jQuery', 'lib:fontAwesome', 'lib:mesloFont', 'lib:justifiedGallery']);
+gulp.task('lib', ['lib:clean', 'lib:jQuery', 'lib:fork-awesome', 'lib:justifiedGallery']);
 gulp.task('lint', ['lint:js', 'lint:stylus']);
 gulp.task('validate', ['validate:config', 'validate:languages']);
 gulp.task('default', [ 'lint', 'validate' ]);
