@@ -14,7 +14,7 @@ Even though I have been a server-side Java developer for years, I still (re)disc
 can't modify an array within a "for-each" loop!
 
 Of course, you could argue that this might make sense, but
-it caught me off guard. So that's one to remeber.
+it caught me off guard. So that's one to remember.
 
 For example, this code throws a `ConcurrentModificationException`:
 

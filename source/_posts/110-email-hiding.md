@@ -5,7 +5,7 @@ tags:
 ---
 
 Bots have been scraping email addresses on the Internet for many years now.
-And since spam is still veyr much a problem these days, it was time I
+And since spam is still very much a problem these days, it was time I
 started obfuscating my address.
 
 ## The compromise

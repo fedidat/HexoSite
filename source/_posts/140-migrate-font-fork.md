@@ -45,9 +45,9 @@ This is what the different file import looked like in my `cactus` theme's styles
 
 ## 3. Adapt the references
 
-The reason I made this article was the non-obvious stuff: the API differences.
+The reason I made this article was the non-obvious stuff: the API differences. These result from the upgrade of Font-Awesome from 4.7 to 5 which will not be fully pulled to Fork.
 
-Fork-Awesome mostly kept the same icon names this far. Categories have remained the same, howver. No brand, regular or solid ("pro" fonts) as in Font-Awesome 5. 
+Fork-Awesome mostly kept the same icon names this far. Categories don't exist here however. No brand, regular or solid ("pro" fonts) as in Font-Awesome 5. 
 So you'll have to convert `fab`, `fas`, `far` and `fal` class names back to `fa`.
 
 The only other significant point is that you might be using weights that aren't present in Fork,

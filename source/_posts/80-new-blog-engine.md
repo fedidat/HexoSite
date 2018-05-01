@@ -68,13 +68,13 @@ Those are really features I can appreciate coming from Pelican.
 
 More on themes: I chose Cactus at the time of writing, a simple but pretty dark theme, which exists in other colors. It is compatible with many Hexo plugins like syntax highlighters or RSS feeds, and is easily customizable and extensible. But there are really many themes.
 
-Now it's not all sunshine and roses. Hexo's main community is Chinese, which may be a problem later and may overall hinder its adoption. Their themes are also not that great overall. And Hexo is relatively behind in terms of technology, next to sites based on Gatsby, Next or Nuxt for example. But these are really insignficant issues for me. And I can switch anytime, thanks to the omnipresence of Markdown and the number of static site generators.
+Now it's not all sunshine and roses. Hexo's main community is Chinese, which may be a problem later and may overall hinder its adoption. Their themes are also not that great overall. And Hexo is relatively behind in terms of technology, next to sites based on Gatsby, Next or Nuxt for example. But these are really insignificant issues for me. And I can switch anytime, thanks to the omnipresence of Markdown and the number of static site generators.
 
 ## Choosing the platform
 
 I wanted to get going very fast. [Netlify](https://www.netlify.com) imposed itself as the best platform by far, being specialized, comprehensive, and most of all free.
 
-In no specific order, here are some awesome features of Nelify: a CMS platform with provided authentication APIs, a DNS server, automatic LetsEncrypt provisioning, and most of all a process that way is too simple: define your deployment as a Github/Gitlab URL, specify a command (`hexo generate` in our case), an output folder (`public` with Hexo) and... that's it! Netlify with listen to pushes and deploy your website. The concept is genius and just as simple as they claim!
+In no specific order, here are some awesome features of Netlify: a CMS platform with provided authentication APIs, a DNS server, automatic LetsEncrypt provisioning, and most of all a process that way is too simple: define your deployment as a Github/Gitlab URL, specify a command (`hexo generate` in our case), an output folder (`public` with Hexo) and... that's it! Netlify with listen to pushes and deploy your website. The concept is genius and just as simple as they claim!
 
 Now nothing is really free, so let's look at how much lock-in I got myself into. Overall, I can go back to Github pages easily anytime, and I could switch to AWS S3 or my VPS with little work. As for Hexo,Netlify is transparent and works with anything that generates static content. So I'm in a really comfortable position.
 

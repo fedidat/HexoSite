@@ -10,7 +10,7 @@ categories:
 permalink: xps-boot
 ---
 
-On Friday I updated my BIOS because I had been having some audio issues accross my operating systems.
+On Friday I updated my BIOS because I had been having some audio issues across my operating systems.
 
 This turned out to be a slight mistake because I had not made any backup of my BIOS settings. 
 It took me a while to realize that this was the problem.
@@ -25,7 +25,7 @@ such occasions. There, I quickly installed the **amazing**
 and voila! Fully functioning dual boot is back. Still with the
 same grub.cfg and everything.
 
-Now, being a high-level programmer, I still sadly don't know what kind of black magic goes on under the hood of Boot-Repair aside from resinstalling GRUB, 
+Now, being a high-level programmer, I still sadly don't know what kind of black magic goes on under the hood of Boot-Repair aside from reinstalling GRUB, 
 or whatever EFI, MBR or GRUB do exactly. But Boot-Repair works every time.
 
 If you have trouble booting from thumb drive, I recommend using the FOSS [Rufus](https://rufus.akeo.ie/) from Windows. 

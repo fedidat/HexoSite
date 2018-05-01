@@ -23,13 +23,13 @@ built onto Jekyll to add features and simplicity, now a framework of its own),
 Hexo (NodeJS) or Hugo (Golang). 
 
 Ultimately, I chose Pelican because I have some experience with Python
-and thought this may ease the configuration and maintainance. 
+and thought this may ease the configuration and maintenance. 
 If you would prefer something else, you can find static site generators for just 
 about any (interpreted) language.
 
 Either way, the language doesn't really matter. The point of a static site
 generator is to just write markup and have the site ready. But you may
-feel more confortable customizing some things like the theme in your language.
+feel more comfortable customizing some things like the theme in your language.
 
 Keep in mind that if you feel like migrating to another static site generator,
 you just have to prepare the new boilerplate and migrate the content, which
@@ -75,9 +75,9 @@ At this point, you will want to decide what kind of markup tool you want to use
 in order to write your articles. Pelican supports two formats:
 
 * Markdown (.md): The consensus online seems to be that Markdown is well supported 
-  accross many platforms but is a loosely-defined standard. This may lead to some 
+  across many platforms but is a loosely-defined standard. This may lead to some 
   inconsistencies and quirks but an otherwise smoother experience.
-* reStrcturedText, on the other hand, is a well-defined standard with one large 
+* reStructuredText, on the other hand, is a well-defined standard with one large 
   implementation, Python Sphinx. It is however much less commonplace and
   sometimes more verbose, so you will find some missing features. 
   Note that Python's own docutils use rST.

@@ -1,5 +1,5 @@
 ---
-title: 6 IntelliJ plugins for productuvity
+title: 6 IntelliJ plugins for productivity
 date: 2018-04-30 22:20:32
 tags:
 ---

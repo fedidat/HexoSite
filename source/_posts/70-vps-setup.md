@@ -21,7 +21,7 @@ Getting a server, these are the options:
 * Pay as you go: If you think you will want to scale up your side project instead of just having a sandbox, you can go for platforms such as AWS EC2 or Google Compute Engine.
 
 * Virtual Private Server: If all you want is a small sandbox, you should be fine with a shared VM. There are several options here:
-    * Baremetal: These are not exactly VPSes, I am referring to extremely cheap dedicated servers, such as Scaleway or OVH for as low as 3 euros per month (and perpetually out of stock).
+    * Bare metal: These are not exactly VPSes, I am referring to extremely cheap dedicated servers, such as Scaleway or OVH for as low as 3 euros per month (and perpetually out of stock).
     * KVM: True VM, allows your to run Docker or other technologies that require to run on their own kernel.
     * OpenVZ: The truly cheap option.
 
@@ -55,7 +55,7 @@ I'm spoiled and don't like overusing the terminal. One awesome thing about X11 i
 
 * Install the X2Go server with this: https://wiki.x2go.org/doku.php/doc:installation:x2goserver#installing_x2go_server
 
-* At this point I got "Connection failed. : mesg: ttyname failed: Invalid argument". Turned out there was a line that said `mesg n || true` in root's .profile, which I blindly copied... I removed it and X2Go worked.
+* At this point I got `Connection failed. : mesg: ttyname failed: Invalid argument`. Turned out there was a line that said `mesg n || true` in root's .profile, which I blindly copied... I removed it and X2Go worked.
 
 * Install X2Go client locally, make a shortcut that uses your SSH key, put a shortcut on your desktop if you want. Finally, if you want you can do some xfce customization (most importantly install xfce4-goodies and xfce4-term) and install some basics: `sudo apt install firefox git`.
 
