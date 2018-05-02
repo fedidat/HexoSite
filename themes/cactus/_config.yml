@@ -31,6 +31,8 @@ social_links:
 #  facebook: /
   linkedin: https://www.linkedin.com/in/fedidat
   mail: /images/address.png
+  
+mailname: ben
 
 
 # Customize the overview with the most recent blog posts on the index page.
@@ -129,3 +131,5 @@ gravatar:
   email: name@email.com
 
 search: true
+
+startYear: 2017

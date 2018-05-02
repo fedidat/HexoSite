@@ -38,7 +38,6 @@
     "stylus-supremacy": "^2.9.0"
   },
   "dependencies": {
-    "fontawesome5-webfont": "^5.0.4",
     "fork-awesome": "^1.0.11",
     "jquery": "^3.3.1",
     "justifiedGallery": "^3.6.5"
