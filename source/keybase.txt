@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/fedidat
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://fedidat.com
+  * I am fedidat (https://keybase.io/fedidat) on keybase.
+  * I have a public key with fingerprint E8B1 91FE E2F9 A8C6 27AC  4999 BD80 30EF 3283 5F39
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010179349a134ea4a7746d7c9722811074c345d380e624c3e4564edb8c9880ed1dda0a",
+      "fingerprint": "e8b191fee2f9a8c627ac4999bd8030ef32835f39",
+      "host": "keybase.io",
+      "key_id": "bd8030ef32835f39",
+      "kid": "010179349a134ea4a7746d7c9722811074c345d380e624c3e4564edb8c9880ed1dda0a",
+      "uid": "da3e9598988e3c48118151c4f85c5519",
+      "username": "fedidat"
+    },
+    "service": {
+      "hostname": "fedidat.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1525249030,
+  "expire_in": 157680000,
+  "prev": "387a0d207c1fe4a96824a3325544830221dd27a9d0ab83be7b29d0b73372e722",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owGtUm1MU1cYbjvYIsjHnJCwNUHuBrO1kfvZe28djm0qOKbCJiwry5r7cUqvQG9p
+bzuIEFQiyCJDGATYcNOhRAyIwEASNlPNAihV0S1WM5mbGlxlhrCFKTLjziXbjyX7
+ufPnvOd9n+d5P857IOopjU77zS50Fq+ysdqJEK+xhpTknQgvi2WIZSdSCJYuUCQC
+j2IrlETEgqAYitEsQbIcRpCAIzmaJs0iLbA0jjMYhtKkQJCUSDAoMOPQBiRlJoHI
+MwLLQJ+IiSKHcogJsUvOAuB2uSWnAmUBw2MsZgcAt7McI5hxmhNIlmV5kUEJFNgJ
+nCEoO8FCokP2qAxYHM95wFpJhj74sC2V9x/4/7lu75KcyBGApVgGBgEhkFCBwShM
+IO0MJVAUpub1eoDbyRUDiLYDURI5BakwIdDpkwSgzlVt5N+AtYJcDJkut6zIglwE
+Aw5FcXksKlEpc6nIDwFv+1vDxktOEU4RMnzA7ZFkJ2LBIFJQJFUUo3AKJ1k4DhMC
+Sl2SG9gkFUHRZgaFR80DfFCSYGgOFXGUzhPgD5Aca2ZwkiMInKJIkiFQHIfNww9h
+RZTjGYIHNI9Dm6cJgsYBnB+itlXilBELBevkCqCmRypwcorXDZCKiFqdPkyj1Wme
+Dtep+6WJWBb7z9JtCMY8yV1/ebrBfznxdGAhTNplfHjO8cGZM+3Hmu7MdQFHlExk
+61sPpiwk+cMpJT+47c5wX1Jqwqniw1uum6P9odmXJq1vvxj/aJGyftutuBZbxt7Q
+J6wJBBrXRWZNWMIrw29EDN+LfWtN2ty7L7QaWwq+Wj/S07ja7Y/Mu9SWa9vTWx30
+274X8JmpxbJnpy4ubx7MnsupsWY4h7PGK587UBaWffCzHY7uaUvL/p/iLFZtjGzg
+LVL7uYr2iGNRXdUrb207nzTi7czIHfX7XrVWNoweiWRk+9HyqbFWamulIf19dmz3
+3cOHfEMm40mCS3yYMXD7Jtn73X1X/+N7o0Pzt7xnh0g6a9/AofFTF5py6ko3XXQU
+jXT3NQcbVtcaUtp/zJ+o0R8ZbH79vRvGkraxwiv61gvVLU0/WF5e+fHA1PVXruX2
+m6sSHj14Pv7LmeYvEjQpO8rjx3XJv+ec3LTQh3T+sflBbahu72SMKTY9tCq47qa1
+vGv/TOHkhvOfBjLjotv+rMkvORFXndYUtvzn1wYbO742BB73//L5O09WdF67v899
+3MouCnmJ9fRVPrNifvOwMXUyM3exI2nFJW3q/PG7GUefWdVbm15iMnxS10G+2dM5
+fvWjSGHZWf+0d29s/pbs4G76BLL9t9lkw1ZPTcrpK7+GcjYKpdvlPV09XfPNVbfr
+vd5oub0+7S8=
+=IXIO
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/fedidat
+
+==================================================================
