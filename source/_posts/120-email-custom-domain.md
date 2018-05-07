@@ -1,6 +1,6 @@
 ---
 title: Setting up email for a personal website
-date: 2018-04-30 14:20:52
+date: 2018-05-02 13:10:34
 tags:
 ---
 
@@ -80,10 +80,10 @@ Let's start with the way to setup forwarding from Yandex to another address.
 
 ![Filter result on Yandex mail](/images/120-email/filter-result.png)
 
-Now with the other direction. I use Gmail so this is how you set it up to send mail with through another SMTP server, specifically YAndex's. 
+Now with the other direction. I use Gmail so this is how you set it up to send mail with through another SMTP server, specifically Yandex's. 
 
 1. Head to Gmail's settings > Accounts & Import, focus on "Send mail as", click on "Add another email address". 
 
-2. Provide the user you use on Yandex, then [Yandex's SMTP server](https://yandex.com/support/mail/mail-clients.html) and your login info. Make sure to uncheck using this address as alias.
+2. Provide the user you use on Yandex, then [Yandex's SMTP server](https://yandex.com/support/mail/mail-clients.html) and your login info. Make sure to uncheck using this address as an alias.
 
 That should be it. Test your setup and you're done.
