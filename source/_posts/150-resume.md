@@ -29,6 +29,10 @@ More importantly, this gives you a single source of truth as you know there is o
     - Specific styling can make your resume minimalistic, elegant or unique, and having a consistent style across formats may be desirable.
     - And text direction (LTR or RTL) may be a requirement for some - including myself. 
 
+Didn't make it to the list:
+
+- Automated build: Integrating into a CI would be great for editing and deploying on-the-fly, maybe even through a CMS or at least reproducibly across platforms. Given the options however, this requirement is way too much to ask for. Maybe one day these tools will be standard.
+
 ## 2. The options
 
 - **Word processor and Notepad**: This is derived from the conventional approach of writing your resume in a word processor, ideally Microsoft Office for compatibility, and exporting to various formats. But in addition, you would copy everything and dump it in text and HTML files, with the latter backed by a custom CSS style.  
