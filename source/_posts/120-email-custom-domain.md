@@ -12,7 +12,6 @@ Then I'll show how I did it.
 My requirements are:
 
 - Custom domain,
-
 - Being notified in a mail client / app, or forwarding to my Gmail.
 
 ## The state of email
@@ -31,7 +30,7 @@ There are many services for setting up email these days:
 
     - **Free** (Yandex, Migadu): I would have once included Zoho here. Unfortunately they have started paywalling the forwarding, POP and IMAP features, forcing users to use their webmail or mobile apps, making the platform useless to most. The remaining options are Migadu and Yandex. Yandex is what you'd expect from a huge Russian company, heavier, and you'll probably expect to leave all expectation of privacy at the door. Migadu is minimalistic, efficient and seems to care about privacy, but they insert "*Sent by Migadu*" at the end of each message and are quite limited.
 
-![Image of Migadu's "Sent by Migadu" message at the end of each outgoing email](/images/120-email/migadu-caveat.png)
+	![Image of Migadu's "Sent by Migadu" message at the end of each outgoing email](/images/120-email/migadu-caveat.png)
 
 3. **Two-way forwarding service** (ImprovMX, ForwardMX.io, Mailgun): If you already have an existing mailbox (e.g Gmail) and would like to just use it to send from and receive mail to your custom domain, you can use a service that will receive your emails, forward them to your mail server and let it send emails with your domain. ImprovMX does that for free but seems very shady, without a privacy policy or owner information. Mailgun and ForwardMX.io seem more reliable, with Mailgun having a limited free tier but with the huge caveat of requiring recipients to authorize sending them emails.
 
@@ -58,7 +57,7 @@ Here's how I connected Yandex to my domain, as well as set it up with Gmail to s
 
 3. After that you'll be told to set up an MX record. I would also setup SPF and DKIM record, you can see those by pressing "DNS editor" after having verified your domain and seeing the TXT records that Yandex delegated DNS would have created. I also created a CNAME from `mail` to `domain.mail.yandex.net.` so that my mail subdomain redirects to my Yandex webmail. This is my resulting setup with Namecheap DNS:
 
-![My DNS records for Yandex mail](/images/120-email/records.png)
+	![My DNS records for Yandex mail](/images/120-email/records.png)
 
 4. Complete the process on the page by setting a username. By now, the email should work with your custom domain.
 
@@ -70,15 +69,15 @@ Let's start with the way to setup forwarding from Yandex to another address.
 
 1. Head to Yandex's webmail, click on the gear on the top right and then on message filtering.
 
-![Message filtering on Yandex mail](/images/120-email/find-filtering.png)
+	![Message filtering on Yandex mail](/images/120-email/find-filtering.png)
 
 2. Setup a new filter that forwards all mail to your second mailbox.
 
-![New filter on Yandex mail](/images/120-email/filter.png)
+	![New filter on Yandex mail](/images/120-email/filter.png)
 
-3. MAke sure it looks something like this:
+3. Make sure it looks something like this:
 
-![Filter result on Yandex mail](/images/120-email/filter-result.png)
+	![Filter result on Yandex mail](/images/120-email/filter-result.png)
 
 Now with the other direction. I use Gmail so this is how you set it up to send mail with through another SMTP server, specifically Yandex's. 
 

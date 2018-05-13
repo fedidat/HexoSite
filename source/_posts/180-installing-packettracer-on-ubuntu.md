@@ -1,5 +1,5 @@
 ---
-title: Installing Cisco Packet Trace on Ubuntu
+title: Installing Cisco Packet Tracer on Ubuntu
 date: 2018-05-11 12:33:58
 tags:
 ---
