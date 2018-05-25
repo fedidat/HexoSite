@@ -41,7 +41,7 @@ The first thing to do is to pick a framework and platform. These are the possibi
 * Github Pages
     * Pro: Free.
     * Pro: well maintained.
-    * Con: Not flexible (not a server, no SSL).
+    * Con: Not flexible (not a server, no SSL). UPDATE: Github [added easy SSL](https://blog.github.com/2018-05-01-github-pages-custom-domains-https/) a week after I wrote this article.
     * Con: Meaningless commits.
 
 For each of these, there are many possibilities. You can look at updated platforms [here](https://github.com/b-long/awesome-static-hosting-and-cms).
