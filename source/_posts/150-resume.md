@@ -48,7 +48,7 @@ This will be the baseline and we'll do our best to replace this.
 
 - **Markdown+Pandoc**: This has been a popular approach for a few years. The quick rundown is [here](https://mszep.github.io/pandoc_resume/). Pandoc is an aspiring universal document converter that has its quirks, and using Markdown as the central source results in the smoothest possible day-to-day operation. The problem is with the initial setup. The pseudo-magical nature of Pandoc often results in unexpected behavior, in particular with styling, layout and direction.
 
-- [**JSON resume**](https://jsonresume.org/): Around the same time as the Markdown+Pandoc approach started, the JSON resume took off with the project of offering very smooth and predictable setup and operation. The downside is the whole thing is very linear, and everyone uses the same theme with the same outcome. But these are not problems for most people. My issue with this the JSON resume is that exporting to DOCX is not possible.
+- [**JSON resume**](https://jsonresume.org/): Around the same time as the Markdown+Pandoc approach started, the JSON resume took off with the project of offering very smooth and predictable setup and operation. The downside is the whole thing is very linear, and everyone uses the same theme with the same outcome. But these are not problems for most people. My issue with this the JSON resume is that exporting to DOC is not possible.
 
 - [**HackMyResume**](https://github.com/hacksalot/HackMyResume): Same as the JSON resume (linear, predictable, JSON format) but the CLI is smart, works out-of-the-box and generates tons of formats including DOC, provided that the theme you're using supports that format. It also has many other features. It doesn't work well with right-to-left however.
 
@@ -57,3 +57,5 @@ After a few days of attempting with great difficulty to implement
 a solution that satisfies all requirements, it seems that the most flexible and standard approach seems to be Markdown and Pandoc.
 
 I'll continue to work towards this and hopefully share my solution here and on Github within the next few days.
+
+*UPDATE: Read part 2 [here](2018/05/28/210-resume-pt-2/), where I settle on one solution based on the pandoc resume.*
