@@ -11,11 +11,6 @@ categories:
 permalink: zoneddatetime-to-offset
 ---
 
-*I'll start (hopefully) making articles about issues I encounter in my job,
-mostly Java server-side stuff,
-and how I solve them. Perhaps it can help others, and I might be able
-to document useful things as well.*
-
 My database had a couple of `timestamp` columns that I wanted to 
 display in [ISO8601](https://en.wikipedia.org/wiki/ISO_8601) format, which is a very popular format for date/time, and in particular it is handled very easily in Javascript. This is especially interesting when considering REST APIs or, as in our case, GraphQL servers that must support an array of frameworks and clients. 
 

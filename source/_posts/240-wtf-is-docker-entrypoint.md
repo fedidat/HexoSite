@@ -4,11 +4,11 @@ date: 2018-05-27 07:11:14
 tags:
 ---
 
-*Partly in homage to John Bain AKA Totalbiscuit, a videogame journalist who passed away 2 days ago, I'll be starting a new series of articles, "WTF is". 
+*Partly in homage to John Bain AKA Totalbiscuit, a videogame journalist who passed away 2 days ago, I started a new series of articles, "WTF is". 
 Like its namesake did with video games, this series will focus on explaining
 somewhat unknown technical concepts shortly and clearly.*
 
-I feel that the difference between Dockerfile's CMD and ENTRYPOINT is not well understood among my coworkers.
+I feel that the difference between Dockerfile's CMD and ENTRYPOINT is poorly understood among my coworkers.
 
 In as few words as possible: **a CMD may specify arguments that are fed to an ENTRYPOINT, if both are defined in a copliant way**.
 
