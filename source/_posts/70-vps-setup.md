@@ -71,7 +71,7 @@ sudo ln -s /usr/bin/nodejs /usr/bin/node
 sudo npm install -g n
 sudo n update
 sudo n latest
-sudo npm install -g npm (twice)
-sudo chown -R $USER:$(id -gn $USER) /home/ben/.config
+sudo npm install -g npm #twice for some reason
+sudo chown -R $USER:$(id -gn $USER) /home/$USER/.config
 ```
 
