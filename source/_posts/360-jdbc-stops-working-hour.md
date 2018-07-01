@@ -1,5 +1,5 @@
 ---
-title: JDBC stops working after an hour (closed connection)
+title: JDBC stops working after an hour (connection closed)
 date: 2018-06-25 08:18:51
 tags:
 ---
