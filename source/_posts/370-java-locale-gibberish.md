@@ -1,6 +1,6 @@
 ---
 title: Setting the Java locale from Linux
-date: 2018-06-26 19:28:43
+date: 2018-07-01 19:28:43
 tags:
 ---
 
