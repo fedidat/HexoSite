@@ -22,16 +22,16 @@ Now that I had a good idea about the problematic subjects and gave my brain a ni
 
 ## Days 3 to D-1: ~~Brain dumps~~ Resources
 
-Ah, brain dumps. I dislike the word, but it is what it is: someone remembered the real questions and started publishing notes of them.
+"Brain dumps" designate questions that someone remembered after passing the exam. The word has a negative association as it implies it's cheating and nothing more.
 
-On the one hand, I will repeat some common Internet wisdom: don't read and memorize brain dumps. On the other hand, I want to address te stigma around even uttering the term "brain dump". It's bullshit. If you are at the stage where you are learning every corner of the material, learning *from* brain dumps is excellent. You can learn all the material using them as pointers. That's a fact, ignore the FUD.
+So on the one hand, I will repeat some common Internet wisdom: don't read and memorize brain dumps. You will simply fail your exam and/or your career. On the other hand, I want to address the stigma around even uttering the term "brain dump". It's bullshit. If you are at the stage where you are learning every corner of the material, learning *from* brain dumps is excellent. You can learn all the material using them as pointers. That's a fact, ignore the FUD.
 
 Now, paying for 9tut is pointless. I can tell you from experience and I'll give you my collection of free brain dumps. Because humans suck and you will find ENDLESS spam about "free brain dumps [current year]".
 
 - [CCNAv6](https://ccnav6.com/cisco-ccna-v3-0-200-125-study-guide-exam-dumps-vcepdf-latest.html): I don't know what the owners of this site are getting from this, but I love them. Free legit brain dumps in a great format. The link goes to 5 parts of a total of 340+ questions with answers which you can either print or solve online. Their labs are less good though. If the site helps you, consider donating to the owner.
 
-- [9tut labs](http://www.9tut.com/category/ccna-lab-challenges): Ah, 9tut. The famously forbidden word around Cisco. I don't like that site, it's a waste of time in my opinion. And the thousands of idiots begging for "the latest dumps" in the comments, gosh. Again, you will get little out of a premium membership.  
-They have one good thing going for them though: these lab challenges. They are very close to the real thing. On each article, click the link and you get the CCNA exam experience. Each troubleshooting simlet has links to the topology and questions under the instructions, and various consoles on the side. Others are basic forms on which you have to enter the right commands (although there is no such thing in the real exam). You could also read their [FAQ & Tips](http://www.9tut.com/ccna-faqs-a-tips).
+- [9tut labs](http://www.9tut.com/category/ccna-lab-challenges): To me, 9tut 9tut is not nearly as good as other sites or as Googlingsome subject. The thousands of idiots begging for "the latest dumps" in the comments do nothing to help the situation. And again, you will get little out of a premium membership.  
+They have one good thing going for them though: these lab challenges. They are very close to the real thing. On each article, click the link and you get the CCNA exam experience. Each troubleshooting simlet has links to the topology, questions under the instructions, and various consoles on the side. Others are basic forms on which you have to enter the right commands (although there is no such thing in the real exam). You could also read their [FAQ & Tips](http://www.9tut.com/ccna-faqs-a-tips).
 
 - Want more questions? You can access the big 9tut collection [here](http://www.9tut.com/ccna-questions-and-answers) or the ["all free dumps"](https://www.allfreedumps.com/200-125-dumps.html) files. But you should rather take a look at [learncisco](https://www.learncisco.net/test-ccna.php?exam=200-125). Every time you access this link, it generates 55 random questions which you can take as a mini exam.
 
@@ -74,6 +74,8 @@ Time for some spoilers. I had six labs:
 -  One lab needed configuring: VLAN ([here](http://www.9tut.com/vlan-troubleshooting-sim)).
 
 One takeaway here: `show running-config` (AKA `sh ru`) goes a very long way and is used for 90% of lab questions. Coupled with `show cdp neighbors` to match the topology, it is very powerful. It showed almost everything I needed: EIGRP networks, encapsulations, VLANs, interface status, access lists, NTA, DHCP, etherchannels, etc. For the rest, a bit of `show ip protocols`, `show ip interface [int]/brief` completed the required tools.
+
+Another note because I had no idea what to expect from the labs: the five troubleshooting ones had me enter commands on switches and routers to answer questions on the side. The configuration lab required using the IOS command line just as you would in a packet tracer or on real equipment, up to the point you thought the situation should be resolved. The only feedback here is a bunch of logging messages (in my case, VLAN mismatch errors) that stop appearing as you fix the problems.
 
 As for the questions, about 80% were present as-is from the [CCNAv6 dumps](https://ccnav6.com/new-cisco-ccna-200-125-exam-dumps-latest-version-2018-free.html), including #11, #27, #32, #36, #42, #44, #88,#95, #186, #188, #203, #209, #235, #247, #312, #314. And a bunch of questions in the dump covered the material in many of the other questions I had. As you can see, not very scary stuff. The rest of them was sometimes challenging but nothing out of the ordinary if you understand the material from studying with the dumps.
 
