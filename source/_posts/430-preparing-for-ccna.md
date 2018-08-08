@@ -6,9 +6,11 @@ tags:
 
 I haven't posted for the last two weeks, and I have a good excuse: I was (mostly) preparing for Cisco's famous [CCNA](https://en.wikipedia.org/wiki/CCNA) certification. And I passed it!
 
-CCNA is considered the entry-level certification for network engineers, although it allows you to do plenty already. Particularly for software engineers like me. So why did I pass it? For the certification itself... and also to show that I can understand what goes on in the layers beneath my code. In a backend team, a guy who can look at the packets and the ports can be very useful when something looks wrong between the logical layers!
+[![CCNA certified](/images/430-preparing-for-ccna/ccna.png)](https://www.youracclaim.com/badges/d0483c2b-984b-4b15-971d-6585bc2c447c)
 
-In addition to my totally unrelated background, I passed my test with a decent score of 893/1000 and only after a sloppy week of learning beside the course itself. So I'll share my experience and my secrets in detail to make up for the absence.
+CCNA is considered the entry-level certification for network engineers, although it allows you to do plenty already, and particularly for software engineers like me who rarely see any networking equipment other than their home router. So why did I pass it? Primarily for the certification itself, but also because it shows that I can understand what goes on in the layers beneath my code. In a backend team, a guy who can look at the packets and the ports can be very useful when something looks wrong between the logical layers!
+
+In addition to my totally unrelated background, I passed my test with a decent score of 893/1000 and only after a sloppy week of learning besides the course itself a few months prior. So I'll share my experience and my secrets in detail to make up for the absence.
 
 ## Day 1: Getting back to it
 

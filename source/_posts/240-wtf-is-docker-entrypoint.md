@@ -1,12 +1,8 @@
 ---
-title: 'WTF is: Docker ENTRYPOINT'
+title: 'What is Docker ENTRYPOINT'
 date: 2018-05-27 07:11:14
 tags:
 ---
-
-*Partly in homage to John Bain AKA Totalbiscuit, a videogame journalist who passed away 2 days ago, I started a new series of articles, "WTF is". 
-Like its namesake did with video games, this series will focus on explaining
-somewhat unknown technical concepts shortly and clearly.*
 
 I feel that the difference between Dockerfile's CMD and ENTRYPOINT is poorly understood among my coworkers.
 

@@ -14,9 +14,9 @@ In short, this is what does work:
 
     ![Open credentials](/images/270-jenkinsfile-scripted-secret-text/creds.png)
 
-	1. Add a new credential:
+	1. Add new credentials:
     
-    ![Add a new credential](/images/270-jenkinsfile-scripted-secret-text/newcred.png)
+    ![Add new credentials](/images/270-jenkinsfile-scripted-secret-text/newcred.png)
 
 	1. Enter the info and confirm:
     
