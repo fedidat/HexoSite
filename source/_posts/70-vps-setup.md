@@ -22,8 +22,8 @@ Getting a server, these are the options:
 
 * Virtual Private Server: If all you want is a small sandbox, you should be fine with a shared VM. There are several options here:
     * Bare metal: These are not exactly VPSes, I am referring to extremely cheap dedicated servers, such as Scaleway or OVH for as low as 3 euros per month (and perpetually out of stock).
-    * KVM: True VM, allows your to run Docker or other technologies that require to run on their own kernel.
-    * OpenVZ: The truly cheap option.
+    * KVM: True VM, allows you to run Docker or other technologies that require to run on their own kernel.
+    * OpenVZ: The truly cheap option. The shared kernel means that many things will be off limits. But good enough for most uses.
 
 I just wanted to start with a dirty cheap sandbox so I picked a $10/year OpenVZ box (2 core, 2GB RAM, 20GB SSD) from https://hiformance.com.
 
@@ -36,7 +36,7 @@ Further steps:
 * Setup SSH PKI: http://www.linuxproblem.org/art_9.html
 
 * Create a user and group:
-```bash
+``` bash
 sudo groupadd users
 sudo useradd -G users ben
 ```
@@ -59,13 +59,13 @@ I'm spoiled and don't like overusing the terminal. One awesome thing about X11 i
 
 * Install X2Go client locally, make a shortcut that uses your SSH key, put a shortcut on your desktop if you want. Finally, if you want you can do some xfce customization (most importantly install xfce4-goodies and xfce4-term) and install some basics: `sudo apt install firefox git`.
 
-And voila! You've got a remote desktop perfect Linux box.
+And voila! You've got the perfect remote desktop solution to your Linux box.
 
 ## NodeJS and NPM
 
-Despite being a Java programmer, these days the first thing I do when I get a new box is install node. Javascript is that ubiquitous and quick to get started. However the node/npm installation isn't that obvious, so I thought I'd throw it in: 
+Despite being a Java programmer, these days the first thing I do when I get a new box is install node. Javascript is that ubiquitous and quick to get started. However the node/npm installation isn't that obvious, so I thought I'd throw it in:
 
-```bash
+``` bash
 sudo apt install nodejs npm
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 sudo npm install -g n
@@ -74,4 +74,3 @@ sudo n latest
 sudo npm install -g npm #twice for some reason
 sudo chown -R $USER:$(id -gn $USER) /home/$USER/.config
 ```
-

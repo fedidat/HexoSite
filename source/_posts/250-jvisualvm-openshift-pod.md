@@ -7,7 +7,7 @@ tags:
 Recently at work, I have struggled to find a way to connect through JVisualVM (an excellent JMX performance visualizer for the JVM) to
 an Openshift pod. What I will say is however also valid for Kubernetes pods in general (using `kubectl port-forward`), or for running jconsole on Linux. 
 
-Sadly, the handy method [I have previously used with nodeports](/2018/05/11/170-opening-ports-in-openshift/) will not work here because of hostname problems. 
+Sadly, the handy method [I have previously used with nodeports](/2018/05/11/170-opening-ports-in-openshift/) will not work here because of problems with the internal hostname used with JMX arguments.
 
 # Set up JMX
 
@@ -35,6 +35,6 @@ oc get pod #list pods and note the hostname of the one you wish to monitor
 oc port-forward [POD_HOSTNAME] [RMI_PORT] #or use kubectl with the same syntax
 ```
 
-If you have executed this on the machine where you run JVisualVM, you can now connect locally to RMI_PORT. Otherwise, you'll have an additional step of opening a SOCKS proxy to that machine. 
+If you have executed this on the machine where you run JVisualVM, you can now connect locally to `RMI_PORT`. Otherwise, you'll have an additional step of opening a SOCKS proxy to that machine.
 
-You can [do that with PuTTy](http://realprogrammers.com/how_to/set_up_an_ssh_tunnel_with_putty.html) on Windows, or with `ssh -D` on Linux. Then you can connect, again locally, to RMI_PORT.
+You can [do that with PuTTy](http://realprogrammers.com/how_to/set_up_an_ssh_tunnel_with_putty.html) on Windows, or with `ssh -D` on Linux. Then you can connect, again locally, to `RMI_PORT`.
