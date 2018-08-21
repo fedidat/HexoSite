@@ -119,7 +119,7 @@ open_graph:
 
 # Fill in your Disqus Comments Shortname to enable Disqus comments.
 disqus: 
-  enabled: true
+  enabled: false
   shortname: fedidat
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
