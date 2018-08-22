@@ -6,14 +6,25 @@ tags:
 
 I have been ranting for a while lately about having to use Google Analytics. This will soon be over, as I will switch to better analytics.
 
-# Why?
+## Why?
 
-- Privacy: The first reason is obvious. Google is the worldwide king of data, and it's a good thing if we can help from donating more of it when there is no good reason for it other than convenience.
-- Reliability: Many people - including myself - use ad blockers, and rightfully so. But private analytics do not track you and only benefit the users of the site, as owners like me will use the info to give them a better service. Ad blockers know this and blocking lists will often give private analytics a pass, making it more likely for owners to understand their users.
-- Security: Robots, hackers and the like, either disable Javascript or try their best to remain stealthy. This is a problem that can be solved with the way analytics was meant to be done: server side. I was amazed when I saw the amount of requests to suspicious URLs being performed by suspicious IPs like /phpMyAdmin. Scary stuff, keep your servers secure!
-- Openness: I am a fervent supported of open source, and I have a hard time suggesting users to run third-party scripts that contain who-knows-what. It's the browser equivalent of `sudo curl | sh`.
+### 1. Privacy
 
-# GoAccess
+The first reason is obvious. Google is the worldwide king of data, and it's a good thing if we can help from donating more of it when there is no good reason for it other than convenience.
+
+### 2. Reliability
+
+Many people - including myself - use ad blockers, and rightfully so. But private analytics usually do not track you for any malicious purpose, and only benefit the users, as site owners will use the information to give users a better service. Ad blocking tools know this and blocking lists will often give private analytics a pass, making it more likely for owners to understand their users.
+
+### 3. Security
+
+Robots, hackers and the like, either disable Javascript or try their best to remain stealthy. This is a problem that can be solved with the way analytics was meant to be done: server side. I was amazed when I saw the amount of requests to suspicious URLs being performed by suspicious IPs like /phpMyAdmin. Scary stuff, keep your servers secure!
+
+### 4. Openness
+
+I am a fervent supported of open source, and I have a hard time suggesting users to run third-party scripts that contain who-knows-what. It's the browser equivalent of `sudo curl | sh`.
+
+## GoAccess
 
 Let's start with the most correct solution: server-side access log analytics with [GoAccess](https://goaccess.io/). It is an excellent piece of software done right.
 
@@ -56,7 +67,7 @@ If you have an issue, refer to GoAccess' [get started](https://goaccess.io/get-s
 
 Of course, GoAccess has its downsides. It cannot discriminate between requests to a font or 404 page and actually interesting hits to a post like Google Analytics can. This is a job for Matomo!
 
-# Matomo (formerly Piwik)
+## Matomo (formerly Piwik)
 
 First of all, this is an open-source self-hosted alternative to Google Analytics that started in 2007, functioning much the same way as GA, with a Javascript tracker snippet and a dashboard backend.
 
@@ -70,7 +81,7 @@ Here is a quick preview of Matomo:
 
 ![Matomo dashboard](/images/453-better-analytics/piwik.png)
 
-# Alternatives
+## Alternatives
 
 Sadly (or fortunately, depending on your opinion), there are few alternatives for open source self-hosted trackers. I will mention [count.ly](https://github.com/Countly/countly-server) for having a modern Node.js stack and an actual Docker image and script suite. Sadly, it is heavier than Matomo, being a full-fledged process, and will refuse to run under 2GB of RAM.
 
@@ -78,6 +89,6 @@ Here is an image of the Dashboard UI from their Github:
 
 ![Countly dashboard](/images/453-better-analytics/countly.png)
 
-# Conclusion
+## Conclusion
 
 Depending on convenience, ethics and dedication, you may want to implement any of these solutions. I believe UNIX philosophy heavily leans towards GoAccess being the correct choice and encourage you to use it if you control your web server.
