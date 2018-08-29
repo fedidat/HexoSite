@@ -14,7 +14,7 @@ The first reason is obvious. Google is the worldwide king of data, and it's a go
 
 ### 2. Reliability
 
-Many people - including myself - use ad blockers, and rightfully so. But private analytics usually do not track you for any malicious purpose, and only benefit the users, as site owners will use the information to give users a better service. Ad blocking tools know this and blocking lists will often give private analytics a pass, making it more likely for owners to understand their users.
+Many people - including myself - use ad blockers, and rightfully so. But private analytics usually do not track you for any malicious purpose, and only benefit the users, as site owners will use the information to give users a better service. Ad blocking tools know this and blocking lists will often give private analytics a pass, making it more likely for owners to understand their users. Note that your mileage will vary, as uBlock Origin seems to block Piwik.
 
 ### 3. Security
 
@@ -28,7 +28,7 @@ I am a fervent supported of open source, and I have a hard time suggesting users
 
 Let's start with the most correct solution: server-side access log analytics with [GoAccess](https://goaccess.io/). It is an excellent piece of software done right.
 
-Installing the latest package from their repo is simple (otherwise look [here](https://goaccess.io/download):
+Installing the latest package from their repo on Debian is simple (otherwise look [here](https://goaccess.io/download)):
 
 ``` bash
 echo "deb http://deb.goaccess.io/ $(lsb_release -cs) main" | sudo tee -a /etc/apt/sources.list.d/goaccess.list
@@ -37,7 +37,7 @@ sudo apt-get update
 sudo apt-get install goaccess
 ```
 
-Then, if you use Apache or Nginx like 99% of users, you can do the following to get a command-like ncurses report (make sure to `chmod` the logging folder, e.g /var/log/apache/ or /var/log/nginx/):
+Then, if you use Apache or Nginx like 99% of owners, you can do the following to get a command-like ncurses report (make sure to `chmod` the logging folder, e.g /var/log/apache/ or /var/log/nginx/):
 
 ``` bash
 goaccess access.log -c --log-format=COMBINED
@@ -73,13 +73,13 @@ First of all, this is an open-source self-hosted alternative to Google Analytics
 
 Piwik recently split into Matomo and Piwik Pro. There was a legal fight with the owners of the trademark, and the open source folks had to fork their superior product and rebrand it as [Matomo](https://matomo.org/). Fair enough.
 
-So, how should you install Matomo? I started to write a lengthy guide and got into problems with Nginx FastCGI, plus the packages got messy. So I'll just recommend you use this [excellent docker-compose](https://github.com/auchri/docker-nginx-piwik). 
+So, how should you install Matomo? I started to write a lengthy guide and got into problems with Nginx FastCGI, plus the packages got messy. So I'll just recommend you use this [excellent docker-compose](https://github.com/auchri/docker-nginx-piwik).
 
 This comes with MariaDB and Nginx. If you don't want to run a dedicated server on another port, and instead you want to have example.com/piwik, use the simple [matomo image](https://hub.docker.com/_/matomo/) and use your main server as a reverse proxy to that.
 
 Here is a quick preview of Matomo:
 
-![Matomo dashboard](/images/453-better-analytics/piwik.png)
+![Matomo dashboard](/images/453-better-analytics/altpi.png)
 
 ## Alternatives
 
