@@ -20,15 +20,15 @@ All I could tell from the problem was that I needed to generate a triangular tim
 
   ![f1 plot](/images/470-triangular-function/f1.png)
 
-- From there, `f2(t)=f1(t)%((D-1)*2)` will give us a [sawtooth wave](https://en.wikipedia.org/wiki/Sawtooth_wave), i.e a function that increases from 0 to D-1 and starts again from 0. The range and cycle size are now therefore correct.
+- From there, `f2(t)=f1(t)%((D-1)*2)` will give us a [sawtooth wave](https://en.wikipedia.org/wiki/Sawtooth_wave), i.e a function that increases from 0 to (D-1)*1 and starts again from 0. The range and cycle size are now therefore correct.
 
   ![f2 plot](/images/470-triangular-function/f2.png)
 
-- `f3(t)=f2(t)-(D-1)` offsets the sawtooth function by D-1, making it increase from -(D-1) to D-1 and starting again from -(D-1).
+- `f3(t)=f2(t)-(D-1)` offsets the sawtooth function by -(D-1) on the y-axis, making it increase from -(D-1) to D-1 and starting again from -(D-1). That way, half of each period is negative and half is positive.
 
   ![f3 plot](/images/470-triangular-function/f3.png)
 
-- `f4(t)=abs(f3(t))` turns the first half around the x axis, making the function decrease from D-1 to 0 and then increase back to D-1. Now the only issue is that the function starts at f4(0)=D-1 instead of f4(0)=0.
+- `f4(t)=abs(f3(t))` mirrors the negative half of each period around the x-axis, making the function decrease from D-1 to 0 and then increase back to D-1. The shape is now correct. Now the only issue is that the function starts at f4(0)=D-1 instead of f4(0)=0.
 
   ![f4 plot](/images/470-triangular-function/f4.png)
 
@@ -66,4 +66,4 @@ And so on...
 
 This may seem like a simple exercise, but I think this is a good illustration of how we can solve problems that seem theoretical. That is the essence of [Computer-aided software engineering (CASE)](https://en.wikipedia.org/wiki/Computer-aided_software_engineering).
 
-*Note: The plots in this article were generated using GNU Octave. The final plot was created with the command `t=0:1:40; D=3; plot(t, abs(mod(t+D-1,(D-1)*2)-(D-1)))`, along with some cosmetic lines.*
+*Note: The plots in this article were generated using GNU Octave. The final plot was created with the command *`t=0:1:40; D=3; plot(t, abs(mod(t+D-1,(D-1)*2)-(D-1)))`*, along with some cosmetic improvements.*

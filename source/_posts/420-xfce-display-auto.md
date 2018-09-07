@@ -70,7 +70,7 @@ A couple of notes here:
 
 udev is a Linux device manager, which generates various events. These can be observed through `sudo udevadm monitor --environment`. What interests us here is that we can make a udev rule which can trigger a xrandr script on device change events.
 
-So make a new rule named `/etc/udev/rules.d/10-screen.rules`. 10 is intentionally a low priority so we make sure our script has no conflicts. The content of the rule would probably be:
+So make a new rule, e.g `/etc/udev/rules.d/10-screen.rules`. `10` is intentionally a low priority number so we make sure our script has no conflicts. The content of the rule would probably be:
 
 `ACTION=="change", SUBSYSTEM=="drm", RUN+="/bin/sh -c 'cd /home/[user]/scripts; /bin/sh layout.sh'"`
 
