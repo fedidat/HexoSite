@@ -4,7 +4,7 @@ date: 2018-08-20 18:51:01
 tags:
 ---
 
-I have been ranting for a while lately about having to use Google Analytics. This will soon be over, as I will switch to better analytics.
+I have been ranting for a while lately about having to use Google Analytics. I hope this will be over sometime soon, as I will switch to better analytics.
 
 ## Why?
 
