@@ -45,6 +45,10 @@ Also pictured is the very good Dell mouse included with the laptop, as well as t
 
 After distro-hopping in the past with Antergos and Fedora, and still occasionally in the past year, trying out SolusVM and Kubuntu, I am an extremely happy Xubuntu user. Unless you are a very specific kind of user, Debian is a no-brainer for productivity these days, and Ubuntu offers some extra convenience for very minor instability. With XFCE on top, I get a very lightweight, functional and aesthetic DE. I don't have time to deal with cumbersome issues these days so it's a pleasure.
 
+Ricing details: There's not too much going on here, it even looks a bit Windows-ish. The main game-changer for me is the [X-Arc-Shadow](https://www.xfce-look.org/p/1167049/) theme for XFCE: download to ~/.themes, select it in `Settings->Appearance` and `Settings->Window Manager`. Beyond that, I use many goodies for the XFCE Panel, which I got from `sudo apt install xfce4-gooodies`. This is the resulting panel (squeezed to 1200px):
+
+![panel](/images/480-computer-setup/panel.png)
+
 ## The way forward
 
 For the past 10 years, I've kept reading hardware news with the dream of buying tons of cool stuff. As a result, I've had a backlog of hardware to buy. Here's my dream setup:

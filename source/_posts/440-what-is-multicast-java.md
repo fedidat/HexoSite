@@ -111,4 +111,4 @@ public class MulticastReceiver extends Thread {
 
 To be honest, multicasting is on the decline. I don't think IPv4 will last very long, and IPv6 has some better mechanisms. Besides, since multicast cannot be used on the Internet, CDNs have largely replaced its use-case for traffic, as well as cloud localization making it easy to allocate clusters in each major area. But it still has its use for the next decade at least in large private organizations.
 
-I hope this article gave a good understanding of multicasting, both in understanding the networking implications, as well as how it affects us programmers.
+I hope this article achieves a good explanation of multicasting, both in understanding the networking implications, as well as how it affects us programmers.
