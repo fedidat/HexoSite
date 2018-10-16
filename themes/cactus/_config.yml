@@ -121,6 +121,10 @@ open_graph:
 disqus: 
   enabled: false
   shortname: fedidat
+page:
+  comment: false
+schnack:
+  enabled: false
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
 google_analytics: 

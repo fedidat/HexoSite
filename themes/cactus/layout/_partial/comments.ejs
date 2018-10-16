@@ -5,3 +5,11 @@
         </div>
     </div>
 <% } %>
+
+<% if(page.comments && theme.schnack.enabled){ %>
+    <div class="comments-go-here"></div>
+    <script src="https://comment.fedidat.com/embed.js"
+        data-schnack-slug="post-slug"
+        data-schnack-target=".comments-go-here">
+    </script>
+<% } %>
