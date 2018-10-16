@@ -13,3 +13,10 @@
         data-schnack-target=".comments-go-here">
     </script>
 <% } %>
+
+<% if(page.comments && theme.isso.enabled){ %>
+<script data-isso="//comment.fedidat.com/"
+        src="//comment.fedidat.com/js/embed.min.js"></script>
+
+<section id="isso-thread"></section>
+<% } %>
