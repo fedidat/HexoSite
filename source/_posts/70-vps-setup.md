@@ -45,7 +45,7 @@ sudo useradd -G users ben
 
 * Switch the default shell from /bin/sh to Bash: `chsh -s /bin/bash username`
 
-* Copy root's .bashrc and .profile, then `chown -R /home/ben`
+* Copy root's .bashrc and .profile, then `chown -R ben /home/ben`
 
 ## X2Go and XFCE
 

@@ -118,8 +118,6 @@ open_graph:
 ##############################################################################
 
 # Fill in your Disqus Comments Shortname to enable Disqus comments.
-page:
-  comment: true
 disqus: 
   enabled: false
   shortname: fedidat
@@ -127,6 +125,8 @@ schnack:
   enabled: false
 isso:
   enabled: true
+remark:
+  enabled: false
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
 google_analytics: 

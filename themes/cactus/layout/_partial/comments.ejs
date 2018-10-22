@@ -20,3 +20,19 @@
 
 <section id="isso-thread"></section>
 <% } %>
+
+<% if(page.comments && theme.remark.enabled){ %>
+    <div id="remark42"></div>
+    <script>
+        var remark_config = {
+          site_id: 'fedidat',
+          max_shown_comments: 10,
+        };
+      
+        (function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//remark.fedidat.com/web/embed.js';
+          (d.head || d.body).appendChild(s);
+        })();
+    </script>
+<% } %>

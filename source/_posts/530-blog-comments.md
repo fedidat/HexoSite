@@ -57,6 +57,14 @@ Ultimately, I almost went for Schnack but I found out too late lacked a crucial 
 
 It is different from Schnack in several regards: it is written in Python and its embedding script is heavier at 40KB, although it makes up for it by not requiring third party authentication, instead allowing anonymous comments. I actually prefer this account model, as I mentioned in opposition to Schnack's.
 
+### remark42
+
+![remark42](/images/530-blog-comments/remark.png)
+
+[remark42](https://remark42.com/) is a sleek system that is full of features. It is [open source](https://github.com/umputun/remark), written in Go and does a lot of things right, like privacy, styling, security or packaging. It may be installed through docker-compose, and its same author also proposes a docker image that serves virtual hosts with Nginx and Certbot for HTTPS.
+
+The problem is that it is a very recent system, with its development first started less than a year ago. In particular, custom styling is not implemented [yet](https://github.com/umputun/remark/issues/5), which is problematic for me since this site currently has a dark theme.
+
 ### Staticman (pull request to Github)
 
 ![Staticman](/images/530-blog-comments/staticman.png)
