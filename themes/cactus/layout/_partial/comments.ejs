@@ -15,6 +15,23 @@
 <% } %>
 
 <% if(page.comments && theme.isso.enabled){ %>
+<style>
+    #isso-thread a {
+        background-image: none;
+    }
+    #isso-thread input { 
+        color: black;
+    }
+    #isso-thread * { 
+        color: white;
+    }
+    #isso-thread > h4 {
+        color: white;
+    }
+    #isso-thread .textarea {
+        color: black;
+    }
+</style>
 <script data-isso="//comment.fedidat.com/"
         src="//comment.fedidat.com/js/embed.min.js"></script>
 
