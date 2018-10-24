@@ -4,7 +4,7 @@ date: 2018-05-28 20:09:45
 tags:
 ---
 
-In [the first part](/2018/05/06/150-resume/), I talked about the situation of automatic resume generation.
+In [the first part](/150-resume/), I talked about the situation of automatic resume generation.
 
 Over 3 weeks afterwards, I'm finally done with testing the different existing setups, and tweaking them for my needs. My requirement that turned out to be the most problematic is the need to work for both text directions (left-to-right and right-to-left), along with conversion to DOC format. This won't affect most people but I still think my proposed solution is the simplest and adapted to most use cases.
 

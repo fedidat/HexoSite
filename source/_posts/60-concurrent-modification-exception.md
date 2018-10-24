@@ -7,7 +7,6 @@ tags:
 - java
 categories:
 - programming
-permalink: concurrent-modification-exception
 ---
 
 Even though I have been a server-side Java developer for years, I still (re)discover things that should sound basic: it turns out that you 

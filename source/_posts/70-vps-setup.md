@@ -7,7 +7,6 @@ tags:
 - linux
 categories:
 - programming
-permalink: vps-setup
 ---
 
 It's been a while I've had a VPS, and I thought I should exercise some server skills, so this time I documented the process of getting a new VPS running smoothly.

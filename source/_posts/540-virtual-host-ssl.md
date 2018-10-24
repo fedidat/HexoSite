@@ -18,7 +18,7 @@ mv /etc/nginx/sites-available/default /etc/nginx/sites-available/backup
 rm /etc/nginx/sites-enabled/default
 ```
 
-Then write a new file `/etc/nginx/sites-available/service`, for example for a redirect on `/` from port 8080 to port 80:
+Then write a new file `/etc/nginx/sites-available/service`, for example for a redirect on `/` on port 80 to port 8080:
 
 ```nginx
 server {

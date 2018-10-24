@@ -7,7 +7,7 @@ tags:
 Recently at work, I have struggled to find a way to connect through JVisualVM (an excellent JMX performance visualizer for the JVM) to
 an Openshift pod. What I will say is however also valid for Kubernetes pods in general (using `kubectl port-forward`), or for running jconsole on Linux. 
 
-Sadly, the handy method [I have previously used with nodeports](/2018/05/11/170-opening-ports-in-openshift/) will not work here because of problems with the internal hostname used with JMX arguments.
+Sadly, the handy method [I have previously used with nodeports](/170-opening-ports-in-openshift/) will not work here because of problems with the internal hostname used with JMX arguments.
 
 # Set up JMX
 

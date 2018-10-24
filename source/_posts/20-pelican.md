@@ -8,7 +8,6 @@ tags:
 - meta
 categories:
 - web
-permalink: experience-pelican
 ---
 
 I just set up this website with Pelican, a static site generator, on Github Pages.

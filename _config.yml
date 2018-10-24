@@ -15,8 +15,8 @@ timezone: Asia/Jerusalem
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://fedidat.com
 root: /
-permalink: :year/:month/:day/:title/
-permalink_defaults:
+permalink: :title/
+permalink_defaults: false
 
 # Directory
 source_dir: source

@@ -9,7 +9,6 @@ tags:
 - programming
 categories:
 - blog
-permalink: new-blog-engine
 ---
 
 In the end, I have realized a few things that have made Pelican the wrong platform for me:

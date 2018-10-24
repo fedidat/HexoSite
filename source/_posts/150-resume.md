@@ -58,4 +58,4 @@ a solution that satisfies all requirements, it seems that the most flexible and 
 
 I'll continue to work towards this and hopefully share my solution here and on Github within the next few days.
 
-*UPDATE: Read part 2 [here](2018/05/28/210-resume-pt-2/), where I settle on one solution based on the pandoc resume.*
+*UPDATE: Read part 2 [here](/210-resume-pt-2/), where I settle on one solution based on the pandoc resume.*

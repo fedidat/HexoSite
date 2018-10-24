@@ -7,7 +7,6 @@ tags:
 - linux
 categories:
 - linux
-permalink: xps-boot
 ---
 
 On Friday I updated my BIOS because I had been having some audio issues across my operating systems.

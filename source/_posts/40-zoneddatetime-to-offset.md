@@ -8,7 +8,6 @@ tags:
 - date
 categories:
 - programming
-permalink: zoneddatetime-to-offset
 ---
 
 My database had a couple of `timestamp` columns that I wanted to 

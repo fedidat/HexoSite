@@ -8,7 +8,6 @@ tags:
 - openshift
 categories:
 - programming
-permalink: openshift-partial-configmaps
 ---
 
 Openshift is great... or rather, Kubernetes is. At least if you don't
