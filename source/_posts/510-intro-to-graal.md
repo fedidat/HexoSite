@@ -169,7 +169,7 @@ By the way, let's activate debugging and take a look at the excellent tools avai
     Hello from GraalVM Java!
     [...]
 
-By copy-pasting the link into Chrome, we get to use the powerful Chrome Dev Tools. This argument works for all the GraalVM interpreter tools (`java`, `ruby`, etc).
+By copy-pasting the link into Chrome, we get to use the powerful Chrome Dev Tools. This parameter works for all the GraalVM interpreter tools (`java`, `ruby`, etc).
 
 ![Chrome profiler example](/images/510-intro-to-graal/chrome-dev-tools.png)
 

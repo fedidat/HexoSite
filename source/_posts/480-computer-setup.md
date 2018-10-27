@@ -14,8 +14,8 @@ I haven't had interesting topics recently at work, as we've been stuck on massiv
 
 At the moment, I only use my Dell XPS 9560 (15"), which I bought in April 2017. It is equipped with:
 
-- a non-touch matte 1920x1080 display without borders,
-- 16GB of RAM (back when it was cheaper),
+- a non-touch matte 1920x1080 display with tiny bezels (useful and functional, no smartphone gimmicks),
+- 16GB of RAM (before the cartel-organized shortage),
 - a 2.8GHz Intel Core i7-7700HQ CPU, quad-core at 45W TDP,
 - a GTX 1050 GPU that allows me to play most games at low settings, even on Linux,
 - 512 GB Toshiba SSD,
@@ -29,7 +29,7 @@ I imported it from France, where it cost me 1400 euros, through a relative of mi
 
 ### The secondary display
 
-To it, I attached a QNIX QX2710 27" IPS monitor which I imported from South Korea back in 2012. It only cost me $300 back then, but since then I could find cheaper and better mainstream 31.5" displays, just not where I live. It serves me very well however. In particular, I took a gamble with this [Cable Matters USB C to DVI Adapter](https://www.amazon.com/gp/product/B012B58JRM), and it ended up working beautifully at full 2560x1440 resolution.
+To it, I attached a QNIX QX2710 27" IPS monitor which I imported from South Korea back in 2012. It only cost me $300 back then, but since then I could find cheaper and better mainstream 31.5" displays, just not where I live. It serves me very well however. In particular, I took a gamble with this [Cable Matters USB-C to DVI Adapter](https://www.amazon.com/gp/product/B012B58JRM), and it ended up working beautifully at full 2560x1440 resolution.
 
 ### The keyboard
 
@@ -43,7 +43,7 @@ Also pictured is the very good Dell mouse included with the laptop, as well as t
 
 ### Linux
 
-After distro-hopping in the past with Antergos and Fedora, and still occasionally in the past year, trying out SolusVM and Kubuntu, I am an extremely happy Xubuntu user. Unless you are a very specific kind of user, Debian is a no-brainer for productivity these days, and Ubuntu offers some extra convenience for very minor instability. With XFCE on top, I get a very lightweight, functional and aesthetic DE. I don't have time to deal with cumbersome issues these days so it's a pleasure.
+After distro-hopping in the past with Antergos and Fedora, and still occasionally in the past year, trying out SolusVM and Kubuntu, I am an extremely happy Xubuntu user. Unless you are a very specific kind of user, Debian is a no-brainer for productivity these days, and Ubuntu offers some extra convenience for very minor instability. With XFCE on top, I get a very lightweight, functional and aesthetic DE. I don't have time to deal with cumbersome issues these days so it's a pleasure. The primary role of an OS should primarily be to get out of the way, and that's why I am very happy two years after ditching Windows.
 
 Ricing details: There's not too much going on here, it even looks a bit Windows-ish. The main game-changer for me is the [X-Arc-Shadow](https://www.xfce-look.org/p/1167049/) theme for XFCE: download to ~/.themes, select it in `Settings->Appearance` and `Settings->Window Manager`. Beyond that, I use many goodies for the XFCE Panel, which I got from `sudo apt install xfce4-gooodies`. This is the resulting panel (squeezed to 1200px):
 

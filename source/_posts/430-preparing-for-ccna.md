@@ -28,20 +28,20 @@ Now that I had a good idea about the problematic subjects and gave my brain a ni
 
 So on the one hand, I will repeat some common Internet wisdom: don't read and memorize brain dumps. You will simply fail your exam and/or your career. On the other hand, I want to address the stigma around even uttering the term "brain dump". It's bullshit. If you are at the stage where you are learning every corner of the material, learning *from* brain dumps is excellent. You can learn all the material using them as pointers. That's a fact, ignore the FUD.
 
-Now, paying for 9tut is pointless. I can tell you from experience and I'll give you my collection of free brain dumps. Because humans suck and you will find ENDLESS spam about "free brain dumps [current year]".
+Now, paying for 9tut is pointless. I can tell you from experience and I'll give you my collection of free brain dumps. Because humans suck and you will find ENDLESS spam about "free brain dumps [current year]". Don't waste your time. I did it for days and here's the good stuff:
 
 - [CCNAv6](https://ccnav6.com/cisco-ccna-v3-0-200-125-study-guide-exam-dumps-vcepdf-latest.html): I don't know what the owners of this site are getting from this, but I love them. Free legit brain dumps in a great format. The link goes to 5 parts of a total of 340+ questions with answers which you can either print or solve online. Their labs are less good though. If the site helps you, consider donating to the owner.
 
-- [9tut labs](http://www.9tut.com/category/ccna-lab-challenges): To me, 9tut 9tut is not nearly as good as other sites or as Googlingsome subject. The thousands of idiots begging for "the latest dumps" in the comments do nothing to help the situation. And again, you will get little out of a premium membership.  
+- [9tut labs](http://www.9tut.com/category/ccna-lab-challenges): To me, 9tut is not nearly as good as other sites or as Googling some subject. The thousands of idiots begging for "the latest dumps" in the comments do nothing to help the situation. And again, you will get little out of a premium membership.  
 They have one good thing going for them though: these lab challenges. They are very close to the real thing. On each article, click the link and you get the CCNA exam experience. Each troubleshooting simlet has links to the topology, questions under the instructions, and various consoles on the side. Others are basic forms on which you have to enter the right commands (although there is no such thing in the real exam). You could also read their [FAQ & Tips](http://www.9tut.com/ccna-faqs-a-tips).
 
 - Want more questions? You can access the big 9tut collection [here](http://www.9tut.com/ccna-questions-and-answers) or the ["all free dumps"](https://www.allfreedumps.com/200-125-dumps.html) files. But you should rather take a look at [learncisco](https://www.learncisco.net/test-ccna.php?exam=200-125). Every time you access this link, it generates 55 random questions which you can take as a mini exam.
 
-In short, use the 340 questions of CCNAv6 to know the the material really well, using Google as needed, and take all the lab challenges on 9tut to get accustomed to the needed IOS commands and the interface of the exam. Any extra work is superfluous to me.
+In short, use the 340 questions of CCNAv6 to know the material really well, using Google when needed, and take all the lab challenges on 9tut to get accustomed to the relevant IOS commands and the interface of the exam. Any extra work is superfluous.
 
 ## Preparing for D-Day
 
-Preparing for the day of the exam you should also do a couple of things:
+Preparing for the day of the exam, you should also do a couple of things:
 
 ### 1. Know the interface
 
@@ -53,7 +53,7 @@ Print some [packetlife cheat sheets](http://packetlife.net/library/cheat-sheets/
 
 ### 3. Go over the questions again
 
-Depending on your commute and exam time, you have some extra time to go over more questions. Do it, some questions are unintuitive and you should have a made a note of them. It's time to memorize them. That's right, I encourage you to memorize *some* questions, and that's on Cisco for making some questions unclear.
+Depending on your commute and exam time, you have some extra time to go over more questions. Do it, some questions are unintuitive and you should have a made a note of them. It's time to memorize them. That's right, I do encourage you to memorize *some* questions, and the blame is on Cisco for making some questions unclear.
 
 ## The exam
 
