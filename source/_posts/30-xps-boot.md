@@ -1,5 +1,5 @@
 ---
-title: XPS boot 	
+title: Dell XPS not booting to Linux 	
 date: 2018-03-27 07:52
 updated: 2018-03-27 07:52
 comments: true

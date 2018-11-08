@@ -16,7 +16,7 @@ Now for my guide. I am late to the party, after a wave of article following the 
 
 ## 5-minute setup
 
-GraalVM offers two editions: a free-and-open-source community edition hosted on [Github](https://github.com/oracle/graal/releases) and a professional edition offered on Oracle's site. The difference is that the enterprise edition is not free for commercial purposes, without major differences between them other than support. Both versions are only available on Linux and Mac.
+GraalVM offers two editions: a free-and-open-source community edition hosted on [Github](https://github.com/oracle/graal/releases) and a professional edition offered on Oracle's site. The difference is that the enterprise edition is not free for commercial purposes, without major differences between them other than support. Also note that the community edition is licensed under GPL v2. Both versions are only available on Linux and Mac.
 
 Download the latest releases from https://github.com/oracle/graal/releases. In its `bin` folder you will find, among others, drop-in replacements for many utils:
 
@@ -61,7 +61,7 @@ I averaged 115.403 ns/op for GraalVM 1.0.0-rc6 with JVM CI 0.48, compared to 174
 
 Let's dive into a practical example of the powerful polyglot feature of GraalVM, with its strong interoperability between languages.
 
-Since there are so many combinations between languages, this is still work in progress. For example, `graalpython` can still not import external modules, and Javascript has the strongest interop right now. However, all available languages can interop to some extent, which I think is amazing. [This page](https://www.graalvm.org/docs/reference-manual/polyglot/#how-to-build-polyglot-applications) neatly shows how get from each language to the others.
+Since there are so many combinations between languages, this is still work in progress. For example, `graalpython` can still not import external modules, and Javascript has the strongest interop right now. However, all available languages can interop to some extent, which I think is amazing. [This page](https://www.graalvm.org/docs/reference-manual/polyglot/#how-to-build-polyglot-applications) neatly shows how to get from each language to the others.
 
 Now, I'll be running a Java thread race based on [this demo](http://www.java2s.com/Code/Java/Threads/ThreadRaceDemo.htm). Here is my thread:
 
@@ -83,7 +83,7 @@ public class RacingThread extends Thread {
   }
 ```
 
-To make things interesting, I'll be running it from Javascript. What's more, I will also be using npm and node to run an express.js server. Inside my endpoint, I will be using Python to manipulate regular expressions with Javascript: that's two levels of interop! Sounds like a lot, but the code is straightforward:
+To make things interesting, I'll be running it from Javascript. What's more, I will also be using npm and node to run an express.js server. Inside my endpoint, I will be using Python to manipulate regular expressions with Javascript: that's two levels of interop! Sounds like a lot is going on, but the code is straightforward:
 
 ```js
 const express = require('express')
@@ -228,7 +228,7 @@ Once again, the immediate benefit of using other languages' strong points (in th
     [prettyprintjson:10170]        write:   4,928.16 ms
     [prettyprintjson:10170]      [total]: 133,677.70 ms
 
-While native images are usually lean, this one weighs 90MB. This is probably due to the JavaScript runtime, and it is still relatively low compared to the 400MB+ of the JVM. Here too there is room for improvement, with low-hanging fruit like [unused classes](https://github.com/oracle/graal/issues/287) on the backlog.
+While native images are usually lean, this one weighs 90MB. This is probably due to the JavaScript runtime, though it is still relatively low compared to the 400MB+ of the JVM. And here too there is room for improvement, with low-hanging fruit like [unused classes](https://github.com/oracle/graal/issues/287) on the backlog.
 
 Although the program failed to produce newlines for me, it does validate and tidy up the JSON a bit. And the execution time was indeed remarkably lower than through the JVM, mostly due to startup times:
 
@@ -297,9 +297,9 @@ The original idea of LLVM sounds similar to GraalVM: "making a modular and reusa
 It turns out that GraalVM made an interpreter for LLVM bitcode, `lli` (formerly named project Sulong), thereby potentially replacing the backends for these languages. And there are some good reasons to do this: 
 
 * GraalVM's interoperability allows us to easily call the LLVM bitcode from other languages like Javascript or Java, 
-* there are potential speedups from GraalVM's mix of AOT and JIT optimizations, rather than assembly which are onyl compiled AOT,
-* the regular suite of GraalVM's debugging utilities applies to its LLVM bitcode interpreter as well,through the regular `--inspect` flag,
-* finally, the usual advantage of intepreters: programs run everywhere (well, everywhere GraalVM runs).
+* There are potential speedups from GraalVM's mix of AOT and JIT optimizations, rather than assembly which are onyl compiled AOT,
+* The regular suite of GraalVM's debugging utilities applies to its LLVM bitcode interpreter as well,through the regular `--inspect` flag,
+* Finally, the usual advantage of intepreters: programs run everywhere (well, everywhere GraalVM runs).
 
 I'll skip the boring Hello Worlds in C++ or Rust, and compile a large program in C. Since Clang's `-emit-llvm` flag doesn't work when linking several files together, I'll be using one of the [large single compilation unit C programs here](https://people.csail.mit.edu/smcc/projects/single-file-programs/), namely the Ogg Vorbis encoder.
 
@@ -329,7 +329,7 @@ And the output jfk_1963_0626_berliner.ogg plays perfectly well. It took 1m04s to
             Rate:         46.8643
             Average bitrate: 69.0 kb/s
 
-11 seconds. Again, performance-wise, there is room for improvement.
+11 seconds, or over 5x as fast as GraalVM. Again, performance-wise, there is room for improvement.
 
 More interesting is the old version of GCC also on that site. When compiled to LLVM bitcode and interpreted with GraalVM, it indeed produces assembly, although that version shows its age, being 32-bit.
 

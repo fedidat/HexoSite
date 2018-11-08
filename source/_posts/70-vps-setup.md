@@ -1,5 +1,5 @@
 ---
-title: VPS Setup 	
+title: My VPS Setup routine
 date: 2018-04-22 09:14
 updated: 2018-04-22 09:14
 comments: true
@@ -9,7 +9,7 @@ categories:
 - programming
 ---
 
-It's been a while I've had a VPS, and I thought I should exercise some server skills, so this time I documented the process of getting a new VPS running smoothly.
+It's been a while since I have last setup a VPS, and I thought I should exercise some server skills, so this time I documented the process of getting a new VPS running smoothly.
 
 ## Picking a host
 

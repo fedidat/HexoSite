@@ -1,5 +1,5 @@
 ---
-title: ConcurrentModificationException 	
+title: Dealing with ConcurrentModificationException 	
 date: 2018-04-16 20:16
 updated: 2018-04-16 20:16
 comments: true
@@ -13,7 +13,7 @@ Even though I have been a server-side Java developer for years, I still (re)disc
 can't modify an array within a "for-each" loop!
 
 Of course, you could argue that this might make sense, but
-it caught me off guard. So that's one to remember.
+it caught me off guard.
 
 For example, this code throws a `ConcurrentModificationException`:
 
@@ -25,12 +25,12 @@ numbers.forEach(n -> {
 });
 ```
 
-Now there are several solutions, depending on your needs and
+There are several solutions, depending on your needs and
 programming styles.
 
 ## 1. Efficiency
 
-If you have Java 8 and you find the syntax elegant enough in your use-case, removeIf is by far the best method, as it is safe and efficient:
+If you have Java 8 and you find the syntax elegant enough for your use-case, removeIf is by far the best method, as it is safe and efficient:
 
 ```java
 numbers.removeIf(n -> n == 2);

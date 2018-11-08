@@ -1,5 +1,5 @@
 ---
-title: Email obfuscation
+title: Hiding email addresses from bots
 date: 2018-04-30 11:58:33
 tags:
 ---
@@ -38,6 +38,3 @@ Then, give your link div an `id` and place something like this next to your link
 ```
 
 That way even bots that skim over the Javascript file will have trouble making sense of this.
-
-Next I'll be setting up my custom domain email and maybe Netlify CMS,
-then I hope to get back to speaking about backend stuff.
