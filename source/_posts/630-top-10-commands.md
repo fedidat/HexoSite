@@ -31,7 +31,7 @@ A few observations:
 
 So I'm no example. But that's a great way to put forward some of the bottlenecks in your workflow.
 
-I do recommend having a large history file size though, e.g for `bash`, put in your `~/.bashrc`:
+For the sake of sample size, I do recommend having a large history file size, e.g for `bash`, put in your `~/.bashrc`:
 
 ```bashrc
 HISTSIZE=10000 #max number of commands to remember per ongoing session
@@ -39,3 +39,5 @@ HISTFILESIZE=20000 #max number of lines contained in the history file
 ```
 
 Or use negative values to set the size to infinite.
+
+This is also useful for the underrated Cmd+R command lookup, for backing up your installed programs or for other history related needs. The storage cost is often negligible and it could save your day.

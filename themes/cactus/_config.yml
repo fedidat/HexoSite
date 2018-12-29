@@ -124,7 +124,7 @@ disqus:
 schnack:
   enabled: false
 isso:
-  enabled: true
+  enabled: false
 remark:
   enabled: false
 
