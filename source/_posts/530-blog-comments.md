@@ -128,3 +128,5 @@ Embedding Isso comments in a site is as simple as this:
 ```
 
 There are many more customization features on [the documentation](https://posativ.org/isso/docs/quickstart/).
+
+**Update 2018-01-06:** My cheapo VPS provider, HiFormance, deadpooled about a week ago. So no comment box for now. I'm slowly working on the site design among many other things at the time of writing so I'd rather not invest time in non-critical things that depend on UI. I don't know when comments will be back on my site. My personal opinion remains that Isso > all, although I am very jealous of Dmitry Shuryalov's [site](https://dmitri.shuralyov.com/blog) in Golang with cute reactions.
