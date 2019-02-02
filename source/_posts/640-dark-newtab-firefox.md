@@ -1,5 +1,5 @@
 ---
-title: Dark background in Firefox 64's new tabs without the white flash
+title: Dark background in Firefox 64's new tabs without a white flash
 date: 2019-01-03 23:11:59
 tags:
 ---
@@ -17,8 +17,8 @@ just by going to `about:config` and editing `browser.display.background_color` t
 
 But this all leaves a blinding white flash for half a second before Firefox loads the edited background color.
 
-Eventually, I found the solution on a Reddit [thread](https://old.reddit.com/r/FirefoxCSS/comments/83grjw/white_flash_is_back_in_firefox_60_can_someone_fix/)
-using [ShadowFox](https://github.com/overdodactyl/ShadowFox), which aims to be a dark retheme of Firefox, in particular 
+Eventually, I found a solution on a Reddit [thread](https://old.reddit.com/r/FirefoxCSS/comments/83grjw/white_flash_is_back_in_firefox_60_can_someone_fix/)
+using code from [ShadowFox](https://github.com/overdodactyl/ShadowFox), which aims to be a dark retheme of Firefox, in particular 
 [this](https://github.com/overdodactyl/ShadowFox/blob/master/css/userChrome-files/remove_white_flash.css) file.
 
 To sum it all up, the complete process is this:
