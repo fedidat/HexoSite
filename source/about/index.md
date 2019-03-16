@@ -17,4 +17,3 @@ and I am also very interested in web programming, Linux and DevOps.
 | --------- | ----------------------------------------- | ------------------------------------------ | --------------------------------------- |
 | English   | [HTML_EN](/cv/ben_fedidat_resume.html)    | [DOC_EN](/cv/ben_fedidat_resume.doc)       | [PDF_EN](/cv/ben_fedidat_resume.pdf)    |
 | עברית       | [HTML_HE](/cv/ben_fedidat_resume_he.html) | [DOC_HE](/cv/ben_fedidat_resume_he.doc)    | [PDF_HE](/cv/ben_fedidat_resume_he.pdf) |
-| Français  | [HTML_FR](/cv/ben_fedidat_resume_fr.html) | [DOC_FR](/cv/ben_fedidat_resume_fr.doc)    | [PDF_FR](/cv/ben_fedidat_resume_fr.pdf) |
