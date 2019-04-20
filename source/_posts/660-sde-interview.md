@@ -5,7 +5,7 @@ tags:
 permalink: interview
 ---
 
-After over a month of absence, I am finally back from interviewing, so I would like to document the process for myself and others. While the best way to learn is to actually undergo interviews, it can really help to go in with some tools and practice.
+After over a month of absence, I am finally back from interviewing and will start working at Amazon, so I would like to document the process for myself and others. While the best way to learn is to actually undergo interviews, it can really help to go in with some tools and practice.
 
 If you already know all about preparing your portfolio, leetcoding, searching for positions, planning with a timeline, and so on, and all you want is to see examples of interviews, you can skip to the [Interviewing](#Interviewing) section.
 
