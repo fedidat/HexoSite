@@ -203,7 +203,11 @@ Be ready to tell what the time and space complexity are when you're done. You wi
 
 If you stumble across a mechanism you didn't know (as in my case on two interviews with Java spinlocks and ArrayBlockingQueues), you will have some difficulty with it. While that kind of interview doesn't get you many points, it doesn't necessarily damage your position if you manage to think about the topic logically and show understanding of related mechanisms.
 
-I wanted to insert samples of coding problems here but this article is already long. In the next weeks, I will be posting more entries with detailed examples of coding problems I was asked through my interviews. I will keep an updated list of them here. In the meantime, this [reddit thread](https://old.reddit.com/r/cscareerquestions/comments/apu3ni/a_list_of_questions_i_was_asked_at_top_tech/) lists commonly encountered problems succinctly and accurately in my experience. For straight practice, [this](https://jeremyaguilon.me/blog/ranking_interview_questions_by_cram_score) is also a short resource to problems to solve by priority. [Here](https://www.teamblind.com/article/New-Year-Gift---Curated-List-of-Top-100-LeetCode-Questions-to-Save-Your-Time-OaM1orEU) is a longer curated list of 100 Leetcode problems.
+I wanted to insert samples of coding problems here but this article is already long. In the next weeks, I will be posting more entries with detailed examples of coding problems I was asked through my interviews. I will keep an updated list of them here:
+
+1. [Interval problems](/680-interval-problems/)
+
+In the meantime, this [reddit thread](https://old.reddit.com/r/cscareerquestions/comments/apu3ni/a_list_of_questions_i_was_asked_at_top_tech/) lists commonly encountered problems succinctly and accurately in my experience. For straight practice, [this](https://jeremyaguilon.me/blog/ranking_interview_questions_by_cram_score) is also a short resource to problems to solve by priority. [Here](https://www.teamblind.com/article/New-Year-Gift---Curated-List-of-Top-100-LeetCode-Questions-to-Save-Your-Time-OaM1orEU) is a longer curated list of 100 Leetcode problems.
 
 ### Assignment
 
