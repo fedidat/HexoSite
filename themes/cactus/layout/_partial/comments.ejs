@@ -38,6 +38,13 @@
 <section id="isso-thread"></section>
 <% } %>
 
+<% if(page.comments && theme.commento.enabled){ %>
+    <style>
+    </style>
+    <div id="commento"></div>
+    <script defer src="https://s.fedidat.com:10011/js/commento.js"></script>
+<% } %>
+
 <% if(page.comments && theme.remark.enabled){ %>
     <div id="remark42"></div>
     <script>
