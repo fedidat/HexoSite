@@ -128,7 +128,7 @@ isso:
 remark:
   enabled: false
 commento:
-  enabled: true
+  enabled: false
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
 google_analytics: 
