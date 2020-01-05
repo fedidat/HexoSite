@@ -27,7 +27,7 @@ In short, this is what does work:
 
 ```groovy
 node {
-    withCredentials([string(credentialsId: 'my-secret', variable: 'SECRET') { //set SECRET with the credential content
+    withCredentials([string(credentialsId: 'my-secret', variable: 'SECRET')]) { //set SECRET with the credential content
         echo "My secret text is '${SECRET}'"
     }
 }
