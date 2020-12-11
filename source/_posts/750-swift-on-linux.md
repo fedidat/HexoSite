@@ -1,5 +1,5 @@
 ---
-title: Swift on Linux with VS Code
+title: 'Zero to Project: Swift on Linux'
 date: 2020-12-07 00:39:32
 tags:
 ---
@@ -39,7 +39,7 @@ swift run myproject
 .build/x86_64-unknown-linux-gnu/debug/swift #prints "Hello, world!"
 ```
 
-My resulting project is [here](https://github.com/fedidat/AdventOfCode2020/tree/master/swift).
+My resulting project is [here](https://github.com/fedidat/AdventOfCode2020/tree/master/swift). This includes some unit tests so it makes a good starter project as well.
 
 ## I'm new to Swift, what's next?
 
