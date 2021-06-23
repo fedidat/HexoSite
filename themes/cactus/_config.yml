@@ -132,7 +132,7 @@ commento:
 cusdis:
   enabled: true
   host: https://cusdis.com
-  app_id: 2e2c7642-cd2f-4d56-bcab-653f7f4e982e
+  app_id: 7115d195-573a-4160-ad6d-97b8611c43e3
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
 google_analytics: 

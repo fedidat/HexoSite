@@ -61,7 +61,7 @@
     </script>
 <% } %>
 
-<% if(page.comments && theme.cusdis.enabled){ %>
+<% if(!page.comments_disabled && theme.cusdis.enabled){ %>
     <script async src="<%= theme.cusdis.host || 'https://cusdis.com' %>/js/cusdis.es.js"></script>
     <div id="cusdis_thread"
     data-host="<%= theme.cusdis.host || 'https://cusdis.com' %>"
