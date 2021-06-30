@@ -126,11 +126,11 @@ schnack:
 isso:
   enabled: false
 remark:
-  enabled: false
+  enabled: true
 commento:
   enabled: false
 cusdis:
-  enabled: true
+  enabled: false
   host: https://cusdis.com
   app_id: 7115d195-573a-4160-ad6d-97b8611c43e3
 

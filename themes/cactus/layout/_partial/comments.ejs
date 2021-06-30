@@ -49,16 +49,25 @@
     <div id="remark42"></div>
     <script>
         var remark_config = {
+          host: "https://s.fedidat.com", // hostname of remark server, same as REMARK_URL in backend config, e.g. "https://demo.remark42.com"
+          site_id: 'fedidat',
+          components: ['embed'],
+          theme: 'dark', // optional param; if it isn't defined default value ('light') will be used
+        };
+      </script>
+      <script>!function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);</script>
+    <!-- <script>
+        var remark_config = {
           site_id: 'fedidat',
           max_shown_comments: 10,
         };
       
         (function() {
           var d = document, s = d.createElement('script');
-          s.src = '//remark.fedidat.com/web/embed.js';
+          s.src = '//s.fedidat.com/web/embed.js';
           (d.head || d.body).appendChild(s);
         })();
-    </script>
+    </script> -->
 <% } %>
 
 <% if(!page.comments_disabled && theme.cusdis.enabled){ %>
