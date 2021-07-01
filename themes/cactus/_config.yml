@@ -95,7 +95,7 @@ highlight: obsidian
 colorscheme: dark
 
 # Maximal width of the page in rem units.
-page_width: 50
+page_width: 60
 
 
 ##############################################################################
