@@ -63,8 +63,6 @@ It is different from Schnack in several regards: it is written in Python and its
 
 [remark42](https://remark42.com/) is a sleek system that is full of features. It is [open source](https://github.com/umputun/remark), written in Go and does a lot of things right, like privacy, styling, security or packaging. It may be installed through docker-compose, and its same author also proposes a docker image that serves virtual hosts with Nginx and Certbot for HTTPS.
 
-The problem is that it is a very recent system, with its development first started less than a year ago. In particular, custom styling is not implemented [yet](https://github.com/umputun/remark/issues/5), which is problematic for me since this site currently has a dark theme.
-
 ### Staticman (pull request to Github)
 
 ![Staticman](/images/530-blog-comments/staticman.png)
@@ -85,48 +83,111 @@ The [article](http://donw.io/post/github-comments/) mentioned in the introductio
 
 My main gripe is once again with the Github lock-in. I thought about reimplementing the API calls to the [Gitlab issues API](https://docs.gitlab.com/ee/api/issues.html) but I would rather my main repo stay on Github for the time being.
 
+### Cusdis
+
+![cusdis](/images/530-blog-comments/cusdis.png)
+
+Cusdis is a nice and modern system but I feel the setup is not currently stable and mature enough to self-deploy. It does offer a free tier but so does Disqus.
+
+More opinions on this [HackerNews thread](https://news.ycombinator.com/item?id=26878153).
+
 ### Others
 
 I have also reviewed other small systems such as [jskomment](https://github.com/monperrus/jskomment) (not reliable), [HashOver](https://github.com/jacobwb/hashover) (not reliable, but keep an eye on [HashOver v2](https://github.com/jacobwb/hashover-next), under development and promising). Conversely, huge systems like Mozilla's [Coral Project Talk](https://coralproject.net/talk/) are well-funded and robust but way too complex for anything under enterprise-scale.
 
-## My pick: Isso
+## My pick: remark42
 
-As you can see, the choice can get technical, and there is no clear winner. Important factors are the scale of your site, how much time you want to dedicate to the setup process, and which features matter to you.
+After years with Isso, then removing comments while tinkering around for a better setup, remark42 became a mature solution, although its documentation could be somewhat clearer.
 
-I ended up picking Isso, which is the least-effort solution that provides the features I wanted:
+The simplest way to put together the backend is to get a server and set it up with a dedicated subdomain. Then use the following `docker-compose.yml`:
 
-- Open source and lightweight,
-- Simple embedding script,
-- Ability to reply to comments as well as edit and delete them,
-- Comment notifications (by email),
-- Moderation features: comment approval, notifications, spam filtering.
+```yaml
+version: '2'
 
-### Installing Isso
+services:
+    remark42:
+        build: .
+        image: umputun/remark42:latest
+        container_name: "remark42"
+        restart: always
+        environment:
+            - REMARK_URL=http://[YOUR_CUSTOM_SUBDOMAIN]
+            - SECRET=codewithoutcoffee
+            - STORE_BOLT_PATH=/srv/var/db
+            - BACKUP_PATH=/srv/var/backup
+            - DEBUG=true
+            - SITE=[YOUR_SITE_ID]
+            - AUTH_ANON=true
+            #- AUTH_GOOGLE_CID
+            #- AUTH_GOOGLE_CSEC
+            #- AUTH_GITHUB_CID
+            #- AUTH_GITHUB_CSEC
+            #- AUTH_FACEBOOK_CID
+            #- AUTH_FACEBOOK_CSEC
+            #- AUTH_DISQUS_CID
+            #- AUTH_DISQUS_CSEC
+        volumes:
+            - ./var:/srv/var
 
-Isso's configuration can get involved, as there are [many settings](https://posativ.org/isso/docs/configuration/server/). The best way to set it up for me was to install the [Debian package](https://packages.crapouillou.net/), which also comes with a default configuration and global install that allows you to hook it up to this [systemd service unit](https://github.com/jgraichen/debian-isso/blob/master/debian/isso.service). This allows easy management and automatic restart.
-
-Overall, the [Docker image](https://hub.docker.com/r/wonderfall/isso/) may be a better option but my OpenVZ VPS doesn't run it. The Debian package's [sample TOML config](https://github.com/jgraichen/debian-isso/blob/master/debian/isso.conf) may be useful to mount if you go down the Docker road.
-
-Keep in mind that the most important setting to change is `host`, which should be the domain of the site embedding the comments, e.g https://fedidat.com/ in my case.
-
-### Server configuration
-
-I used Nginx proxy/forwarding file with TLS and HSTS support, with Certbot to generate the certificate.
-
-Also, if using the ufw firewall, allow HTTPS traffic by running this:
-
-    sudo ufw allow "Nginx HTTPS"
-
-### Embedding
-
-Embedding Isso comments in a site is as simple as this:
-
-```js
-<script data-isso="//comments.example.com/"
-        src="//comments.example.com/js/embed.min.js"></script>
-<section id="isso-thread"></section>
+    nginx:
+       build: .
+        image: umputun/nginx-le:latest
+        hostname: nginx
+        restart: always
+        container_name: nginx
+        links:
+          - "remark42"
+        volumes:
+            - /etc/ssl:/etc/nginx/ssl
+            - [PATH_TO_NGINX_CONF]
+        ports:
+            - "80:80"
+            - "443:443"
+        environment:
+            - LETSENCRYPT=true
+            - LE_EMAIL=[YOUR_EMAIL]
+            - LE_FQDN=[YOUR_CUSTOM_SUBDOMAIN]
 ```
 
-There are many more customization features on [the documentation](https://posativ.org/isso/docs/quickstart/).
+replacing YOUR_EMAIL, YOUR_CUSTOM_SUBDOMAIN and writing whatever you want for YOUR_SITE_ID, then using this file from https://github.com/umputun/remark42/blob/master/backend/nginx-proxy-example.conf into PATH_TO_NGINX_CONF:
 
-**Update 2018-01-06:** My cheapo VPS provider, HiFormance, deadpooled about a week ago. So no comment box for now. I'm slowly working on the site design among many other things at the time of writing so I'd rather not invest time in non-critical things that depend on UI. I don't know when comments will be back on my site. My personal opinion remains that Isso > all, although I am very jealous of Dmitry Shuryalov's [site](https://dmitri.shuralyov.com/blog) in Golang with cute reactions.
+```nginx
+server {
+    listen   443;
+    server_name [YOUR_CUSTOM_SUBDOMAIN];
+
+    ssl    on;
+    ssl_certificate         SSL_CERT;
+    ssl_certificate_key     SSL_KEY;
+    ssl_trusted_certificate SSL_CHAIN_CERT;
+
+    add_header Strict-Transport-Security "max-age=63072000; includeSubdomains; preload";
+
+    limit_conn perip 10;
+
+    location / {
+         proxy_redirect          off;
+         proxy_set_header        X-Real-IP $remote_addr;
+         proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
+         proxy_set_header        Host $http_host;
+         proxy_pass              http://remark42:8080/; #from the container name
+     }
+}
+```
+
+Finally integrate into your website using this simple snippet, as used on this website:
+
+```html
+    <div id="remark42"></div>
+    <script>
+        var remark_config = {
+          host: "https://[YOUR_CUSTOM_SUBDOMAIN]",
+          site_id: '[YOUR_SITE_ID]',
+          components: ['embed'],
+          //theme: 'dark', //yes, it has a dark theme now!
+        };
+      </script>
+      <script>!function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);</script>
+```
+
+And that should be it. Make sure to check the [remark42 README](https://github.com/umputun/remark42/blob/master/README.md) for any further details.
