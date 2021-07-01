@@ -191,3 +191,5 @@ Finally integrate into your website using this simple snippet, as used on this w
 ```
 
 And that should be it. Make sure to check the [remark42 README](https://github.com/umputun/remark42/blob/master/README.md) for any further details.
+
+Note: I remain jealous of Dmitry Shuryalov's [site](https://dmitri.shuralyov.com/blog) in Golang with cute reactions.
