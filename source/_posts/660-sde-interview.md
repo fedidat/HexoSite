@@ -2,7 +2,7 @@
 title: Interviewing for backend software engineer in 2019
 date: 2019-03-09 20:09:03
 tags:
-permalink: interview
+permalink: /interview/
 ---
 
 After over a month of absence, I am finally back from interviewing and will start working at Amazon, so I would like to document the process for myself and others. While the best way to learn is to actually undergo interviews, it can really help to go in with some tools and practice.
